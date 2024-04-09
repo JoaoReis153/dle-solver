@@ -1,0 +1,86 @@
+Banjo & Kazooie:Other:Bear, Bird:Banjo-Kazooie:106:SSB Ultimate:Nintendo 64:1997
+Bayonetta:Female:Augmented, Human:Bayonetta:81:SSB 3DS/Wii U:PlayStation 3, Xbox 360:2009
+Bowser Jr.:Selectable:Koopa:Mario:108:SSB 3DS/Wii U:GameCube:2002
+Bowser:Male:Koopa:Mario:135:SSB Melee:NES:1985
+Byleth:Selectable:God, Human:Fire Emblem:97:SSB Ultimate:Android/iOS, Nintendo Switch:2019
+Captain Falcon:Male:Human:F-Zero:104:SSB 64:SNES:1990
+Chrom:Male:Augmented, Human:Fire Emblem:95:SSB Ultimate:3DS:2012
+Cloud:Male:Augmented, Human:Final Fantasy:100:SSB 3DS/Wii U:PlayStation:1997
+Corrin:Selectable:Dragon, Human:Fire Emblem:98:SSB 3DS/Wii U:3DS:2015
+Daisy:Female:Human:Mario:89:SSB Ultimate:Game Boy:1989
+Dark Pit:Male:Angel:Kid Icarus:96:SSB 3DS/Wii U:3DS:2012
+Dark Samus:Female:Augmented, Human, Metroid:Metroid:108:SSB Ultimate:GameCube:2002
+Diddy Kong:Male:Kong:Donkey Kong:90:SSB Brawl:SNES:1994
+Donkey Kong:Male:Kong:Donkey Kong:127:SSB 64:Arcade:1981
+Dr. Mario:Male:Human:Mario:98:SSB Melee:Game Boy, NES:1990
+Duck Hunt Duo:Other:Bird, Dog:Duck Hunt:86:SSB 3DS/Wii U:NES:1984
+Falco:Male:Bird:Star Fox:82:SSB Melee:SNES:1993
+Fox:Male:Fox:Star Fox:77:SSB 64:SNES:1993
+Ganondorf:Male:Demon, Human:The Legend of Zelda:118:SSB Melee:Nintendo 64:1998
+Greninja:Other:Pokémon:Pokémon:88:SSB 3DS/Wii U:3DS:2013
+Hero:Male:Human, Hybrid:Dragon Quest:101:SSB Ultimate:NES:1986
+Ice Climbers:Other:Human:Ice Climber:92:SSB Melee:Arcade:1984
+Ike:Male:Human:Fire Emblem:107:SSB Brawl:GameCube:2005
+Incineroar:Other:Pokémon:Pokémon:116:SSB Ultimate:3DS:2016
+Inkling:Selectable:Inkling:Splatoon:94:SSB Ultimate:Wii U:2015
+Isabelle:Female:Dog:Animal Crossing:88:SSB Ultimate:3DS:2012
+Jigglypuff:Other:Pokémon:Pokémon:68:SSB 64:Game Boy:1996
+Joker:Male:Human:Persona:93:SSB Ultimate:PlayStation 3, PlayStation 4:2016
+Kazuya:Male:Demon, Human:Tekken:113:SSB Ultimate:Arcade:1994
+Ken:Male:Human:Street Fighter:103:SSB Ultimate:Arcade:1987
+King Dedede:Male:Bird:Kirby:127:SSB Brawl:Game Boy:1992
+King K. Rool:Male:Crocodile:Donkey Kong:133:SSB Ultimate:SNES:1994
+Kirby:Male:Kirby:Kirby:79:SSB 64:Game Boy:1992
+Link:Male:Human:The Legend of Zelda:104:SSB 64:NES:1986
+Little Mac:Male:Human:Punch-Out!!:87:SSB 3DS/Wii U:NES:1984
+Lucario:Other:Pokémon:Pokémon:92:SSB Brawl:Nintendo DS:2005
+Lucas:Male:Human:EarthBound:94:SSB Brawl:GBA:2006
+Lucina:Female:Augmented, Human:Fire Emblem:90:SSB 3DS/Wii U:3DS:2012
+Luigi:Male:Human:Mario:97:SSB 64:Arcade:1983
+Mario:Male:Human:Mario:98:SSB 64:Arcade:1981
+Marth:Male:Human:Fire Emblem:90:SSB Melee:Famicom:1990
+Mega Man:Male:Robot:Mega Man:102:SSB 3DS/Wii U:NES:1987
+Meta Knight:Male:Unknown:Kirby:80:SSB Brawl:NES:1993
+Mewtwo:Other:Pokémon:Pokémon:79:SSB Melee:Game Boy:1996
+Mii Brawler:Selectable:Human:SSB:94:SSB 3DS/Wii U:Wii:2006
+Mii Gunner:Selectable:Human:SSB:104:SSB 3DS/Wii U:Wii:2006
+Mii Swordfighter:Selectable:Human:SSB:100:SSB 3DS/Wii U:Wii:2006
+Min Min:Female:Augmented, Human:ARMS:104:SSB Ultimate:Nintendo Switch:2017
+Mr. Game & Watch:Male:Monochrome:Game & Watch:75:SSB Melee:Game & Watch:1980
+Ness:Male:Human:EarthBound:94:SSB 64:SNES:1994
+Olimar:Male:Hocotatian:Pikmin:79:SSB Brawl:GameCube:2001
+PAC-MAN:Male:Pac-Person:Pac-Man:95:SSB 3DS/Wii U:Arcade:1980
+Palutena:Female:God:Kid Icarus:91:SSB 3DS/Wii U:NES:1986
+Peach:Female:Human:Mario:89:SSB Melee:NES:1985
+Pichu:Other:Pokémon:Pokémon:62:SSB Melee:Game Boy Color:1999
+Pikachu:Other:Pokémon:Pokémon:79:SSB 64:Game Boy:1996
+Piranha Plant:Other:Plant:Mario:112:SSB Ultimate:NES:1985
+Pit:Male:Angel:Kid Icarus:96:SSB Brawl:NES:1986
+Pokémon Trainer:Selectable:Human, Pokémon:Pokémon:75:SSB Brawl:Game Boy:1996
+Pyra/Mythra:Female:Blade, Human:Xenoblade:98:SSB Ultimate:Nintendo Switch:2017
+R.O.B.:Male:Robot:R.O.B.:106:SSB Brawl:NES:1985
+Richter:Male:Human:Castlevania:107:SSB Ultimate:TurboGrafx-16:1993
+Ridley:Male:Unknown:Metroid:107:SSB Ultimate:NES:1986
+Robin:Selectable:Augmented, Human:Fire Emblem:95:SSB 3DS/Wii U:3DS:2012
+Rosalina & Luma:Female:Human, Luma:Mario:82:SSB 3DS/Wii U:Wii:2007
+Roy:Male:Human:Fire Emblem:95:SSB Melee:GBA:2001
+Ryu:Male:Human:Street Fighter:103:SSB 3DS/Wii U:Arcade:1987
+Samus:Female:Augmented, Human:Metroid:108:SSB 64:NES:1986
+Sephiroth:Male:Human, Jenova:Final Fantasy:79:SSB Ultimate:PlayStation:1997
+Sheik:Female:Human:The Legend of Zelda:78:SSB Melee:Nintendo 64:1998
+Shulk:Male:Homs:Xenoblade:97:SSB 3DS/Wii U:Wii:2010
+Simon:Male:Human:Castlevania:107:SSB Ultimate:NES:1986
+Snake:Male:Augmented, Human:Metal Gear Solid:106:SSB Brawl:MSX2:1987
+Sonic:Male:Hedgehog:Sonic the Hedgehog:86:SSB Brawl:Sega Genesis:1990
+Sora:Male:Human:Kingdom Hearts:85:SSB Ultimate:PlayStation 2:2002
+Steve:Selectable:Human:Minecraft:92:SSB Ultimate:Computer:2009
+Terry:Male:Human:The King of Fighters:108:SSB Ultimate:Arcade:1991
+Toon Link:Male:Human:The Legend of Zelda:91:SSB Brawl:GameCube:2002
+Villager:Selectable:Human:Animal Crossing:92:SSB 3DS/Wii U:Nintendo 64:2001
+Wario:Male:Human:Mario:107:SSB Brawl:Game Boy:1992
+Wii Fit Trainer:Selectable:Human:Wii Fit:96:SSB 3DS/Wii U:Wii:2007
+Wolf:Male:Wolf:Star Fox:92:SSB Brawl:Nintendo 64:1997
+Yoshi:Male:Yoshi:Mario:104:SSB 64:SNES:1990
+Young Link:Male:Human:The Legend of Zelda:88:SSB Melee:Nintendo 64:1998
+Zelda:Female:Human:The Legend of Zelda:85:SSB Melee:NES:1986
+Zero Suit Samus:Female:Augmented, Human:Metroid:80:SSB Brawl:GBA:1986

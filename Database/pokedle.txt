@@ -1,0 +1,151 @@
+Abra:Psychic:None:Urban:Yellow:1:90cm:19.5kg
+Aerodactyl:Rock:Flying:Mountain:Gray, Purple:1:1m80:59kg
+Alakazam:Psychic:None:Urban:Yellow:3:1m50:48kg
+Arbok:Poison:None:Grassland:Purple:2:3m50:65kg
+Arcanine:Fire:None:Grassland:Orange, Yellow:2:1m90:155kg
+Articuno:Ice:Flying:Rare:Blue:1:1m70:55.4kg
+Beedrill:Bug:Poison:Forest:Black, Yellow:3:1m:29.5kg
+Bellsprout:Grass:Poison:Forest:Green, Yellow:1:70cm:4kg
+Blastoise:Water:None:Waters-edge:Blue:3:1m60:85.5kg
+Bulbasaur:Grass:Poison:Grassland:Green:1:70cm:6.9kg
+Butterfree:Bug:Flying:Forest:Purple, White:3:1m10:32kg
+Caterpie:Bug:None:Forest:Green:1:30cm:2.9kg
+Chansey:Normal:None:Urban:Pink:1:1m10:34.6kg
+Charizard:Fire:Flying:Mountain:Orange:3:1m70:90.5kg
+Charmander:Fire:None:Mountain:Orange:1:60cm:8.5kg
+Charmeleon:Fire:None:Mountain:Red:2:1m10:19kg
+Clefable:Fairy:None:Mountain:Pink:2:1m30:40kg
+Clefairy:Fairy:None:Mountain:Pink:1:60cm:7.5kg
+Cloyster:Water:Ice:Sea:Purple:2:1m50:132.5kg
+Cubone:Ground:None:Mountain:Brown:1:40cm:6.5kg
+Dewgong:Water:Ice:Sea:White:2:1m70:120kg
+Diglett:Ground:None:Cave:Brown:1:20cm:800g
+Ditto:Normal:None:Urban:Purple:1:30cm:4kg
+Dodrio:Normal:Flying:Grassland:Brown:2:1m80:85.2kg
+Doduo:Normal:Flying:Grassland:Brown:1:1m40:39.2kg
+Dragonair:Dragon:None:Waters-edge:Blue:2:4m:16.5kg
+Dragonite:Dragon:Flying:Waters-edge:Orange:3:2m20:210kg
+Dratini:Dragon:None:Waters-edge:Blue:1:1m80:3.3kg
+Drowzee:Psychic:None:Grassland:Brown, Yellow:1:1m:32.4kg
+Dugtrio:Ground:None:Cave:Brown:2:70cm:33.3kg
+Eevee:Normal:None:Urban:Brown:1:30cm:6.5kg
+Ekans:Poison:None:Grassland:Purple:1:2m:6.9kg
+Electabuzz:Electric:None:Grassland:Black, Yellow:1:1m10:30kg
+Electrode:Electric:None:Urban:Red, White:2:1m20:66.6kg
+Exeggcute:Grass:Psychic:Forest:Pink:1:40cm:2.5kg
+Exeggutor:Grass:Psychic:Forest:Brown, Yellow:2:2m:120kg
+Farfetch’d:Normal:Flying:Grassland:Brown:1:80cm:15kg
+Fearow:Normal:Flying:Rough-terrain:Brown:2:1m20:38kg
+Flareon:Fire:None:Urban:Orange:2:90cm:25kg
+Gastly:Ghost:Poison:Cave:Black, Purple:1:1m30:100g
+Gengar:Ghost:Poison:Cave:Purple:3:1m50:40.5kg
+Geodude:Rock:Ground:Mountain:Gray:1:40cm:20kg
+Gloom:Grass:Poison:Grassland:Blue, Orange:2:80cm:8.6kg
+Golbat:Poison:Flying:Cave:Blue, Purple:2:1m60:55kg
+Goldeen:Water:None:Waters-edge:Red, White:1:60cm:15kg
+Golduck:Water:None:Waters-edge:Blue:2:1m70:76.6kg
+Golem:Rock:Ground:Mountain:Gray:3:1m40:300kg
+Graveler:Rock:Ground:Mountain:Gray:2:1m:105kg
+Grimer:Poison:None:Urban:Purple:1:90cm:30kg
+Growlithe:Fire:None:Grassland:Orange, Yellow:1:70cm:19kg
+Gyarados:Water:Flying:Waters-edge:Blue:2:6m50:235kg
+Haunter:Ghost:Poison:Cave:Purple:2:1m60:100g
+Hitmonchan:Fighting:None:Urban:Brown:1:1m40:50.2kg
+Hitmonlee:Fighting:None:Urban:Brown:1:1m50:49.8kg
+Horsea:Water:None:Sea:Blue:1:40cm:8kg
+Hypno:Psychic:None:Grassland:Yellow:2:1m60:75.6kg
+Ivysaur:Grass:Poison:Grassland:Green:2:1m:13kg
+Jigglypuff:Normal:Fairy:Grassland:Pink:1:50cm:5.5kg
+Jolteon:Electric:None:Urban:Yellow:2:80cm:24.5kg
+Jynx:Ice:Psychic:Urban:Purple, Red:1:1m40:40.6kg
+Kabuto:Rock:Water:Sea:Black, Brown:1:50cm:11.5kg
+Kabutops:Rock:Water:Sea:Brown:2:1m30:40.5kg
+Kadabra:Psychic:None:Urban:Yellow:2:1m30:56.5kg
+Kakuna:Bug:Poison:Forest:Yellow:2:60cm:10kg
+Kangaskhan:Normal:None:Grassland:Brown:1:2m20:80kg
+Kingler:Water:None:Waters-edge:Orange, White:2:1m30:60kg
+Koffing:Poison:None:Urban:Purple:1:60cm:1kg
+Krabby:Water:None:Waters-edge:Orange, White:1:40cm:6.5kg
+Lapras:Water:Ice:Sea:Blue:1:2m50:220kg
+Lickitung:Normal:None:Grassland:Pink:1:1m20:65.5kg
+Machamp:Fighting:None:Mountain:Gray:3:1m60:130kg
+Machoke:Fighting:None:Mountain:Purple:2:1m50:70.5kg
+Machop:Fighting:None:Mountain:Gray:1:80cm:19.5kg
+Magikarp:Water:None:Waters-edge:Red:1:90cm:10kg
+Magmar:Fire:None:Mountain:Red, Yellow:1:1m30:44.5kg
+Magnemite:Electric:Steel:Rough-terrain:Gray:1:30cm:6kg
+Magneton:Electric:Steel:Rough-terrain:Gray:2:1m:60kg
+Mankey:Fighting:None:Mountain:Brown, White:1:50cm:28kg
+Marowak:Ground:None:Mountain:Brown:2:1m:45kg
+Meowth:Normal:None:Urban:Yellow:1:40cm:4.2kg
+Metapod:Bug:None:Forest:Green:2:70cm:9.9kg
+Mew:Psychic:None:Rare:Pink:1:40cm:4kg
+Mewtwo:Psychic:None:Rare:Gray, Purple:1:2m:122kg
+Moltres:Fire:Flying:Rare:Yellow:1:2m:60kg
+Mr. Mime:Psychic:Fairy:Urban:Pink, White:1:1m30:54.5kg
+Muk:Poison:None:Urban:Purple:2:1m20:30kg
+Nidoking:Poison:Ground:Grassland:Purple:3:1m40:62kg
+Nidoqueen:Poison:Ground:Grassland:Blue:3:1m30:60kg
+Nidoran♀:Poison:None:Grassland:Blue:1:40cm:7kg
+Nidoran♂:Poison:None:Grassland:Purple:1:50cm:9kg
+Nidorina:Poison:None:Grassland:Blue:2:80cm:20kg
+Nidorino:Poison:None:Grassland:Purple:2:90cm:19.5kg
+Ninetales:Fire:None:Grassland:Yellow:2:1m10:19.9kg
+Oddish:Grass:Poison:Grassland:Blue, Green:1:50cm:5.4kg
+Omanyte:Rock:Water:Sea:Blue, White:1:40cm:7.5kg
+Omastar:Rock:Water:Sea:Blue, White:2:1m:35kg
+Onix:Rock:Ground:Cave:Gray:1:8m80:210kg
+Paras:Bug:Grass:Forest:Orange:1:30cm:5.4kg
+Parasect:Bug:Grass:Forest:Orange, Red:2:1m:29.5kg
+Persian:Normal:None:Urban:Yellow:2:1m:32kg
+Pidgeot:Normal:Flying:Forest:Brown, Yellow:3:1m50:39.5kg
+Pidgeotto:Normal:Flying:Forest:Brown, Yellow:2:1m10:30kg
+Pidgey:Normal:Flying:Forest:Brown, Yellow:1:30cm:1.8kg
+Pikachu:Electric:None:Forest:Yellow:1:40cm:6kg
+Pinsir:Bug:None:Forest:Brown:1:1m50:55kg
+Poliwag:Water:None:Waters-edge:Blue, White:1:60cm:12.4kg
+Poliwhirl:Water:None:Waters-edge:Blue, White:2:1m:20kg
+Poliwrath:Water:Fighting:Waters-edge:Blue, White:3:1m30:54kg
+Ponyta:Fire:None:Grassland:Orange, Yellow:1:1m:30kg
+Porygon:Normal:None:Urban:Blue, Pink:1:80cm:36.5kg
+Primeape:Fighting:None:Mountain:Brown, White:2:1m:32kg
+Psyduck:Water:None:Waters-edge:Yellow:1:80cm:19.6kg
+Raichu:Electric:None:Forest:Yellow:2:80cm:30kg
+Rapidash:Fire:None:Grassland:Orange, Yellow:2:1m70:95kg
+Raticate:Normal:None:Grassland:Brown:2:70cm:18.5kg
+Rattata:Normal:None:Grassland:Purple:1:30cm:3.5kg
+Rhydon:Ground:Rock:Rough-terrain:Gray:2:1m90:120kg
+Rhyhorn:Ground:Rock:Rough-terrain:Gray:1:1m:115kg
+Sandshrew:Ground:None:Rough-terrain:Yellow:1:60cm:12kg
+Sandslash:Ground:None:Rough-terrain:Yellow:2:1m:29.5kg
+Scyther:Bug:Flying:Grassland:Green:1:1m50:56kg
+Seadra:Water:None:Sea:Blue:2:1m20:25kg
+Seaking:Water:None:Waters-edge:Red, White:2:1m30:39kg
+Seel:Water:None:Sea:White:1:1m10:90kg
+Shellder:Water:None:Sea:Black, Purple:1:30cm:4kg
+Slowbro:Water:Psychic:Waters-edge:Pink:2:1m60:78.5kg
+Slowpoke:Water:Psychic:Waters-edge:Pink:1:1m20:36kg
+Snorlax:Normal:None:Mountain:Blue, White:1:2m10:460kg
+Spearow:Normal:Flying:Rough-terrain:Brown:1:30cm:2kg
+Squirtle:Water:None:Waters-edge:Blue:1:50cm:9kg
+Starmie:Water:Psychic:Sea:Purple:2:1m10:80kg
+Staryu:Water:None:Sea:Brown, Yellow:1:80cm:34.5kg
+Tangela:Grass:None:Grassland:Blue:1:1m:35kg
+Tauros:Normal:None:Grassland:Brown:1:1m40:88.4kg
+Tentacool:Water:Poison:Sea:Blue, Red:1:90cm:45.5kg
+Tentacruel:Water:Poison:Sea:Blue, Red:2:1m60:55kg
+Vaporeon:Water:None:Urban:Blue:2:1m:29kg
+Venomoth:Bug:Poison:Forest:Purple:2:1m50:12.5kg
+Venonat:Bug:Poison:Forest:Purple:1:1m:30kg
+Venusaur:Grass:Poison:Grassland:Green:3:2m:100kg
+Victreebel:Grass:Poison:Forest:Green, Yellow:3:1m70:15.5kg
+Vileplume:Grass:Poison:Grassland:Blue, Red:3:1m20:18.6kg
+Voltorb:Electric:None:Urban:Red, White:1:50cm:10.4kg
+Vulpix:Fire:None:Grassland:Brown, Orange:1:60cm:9.9kg
+Wartortle:Water:None:Waters-edge:Blue:2:1m:22.5kg
+Weedle:Bug:Poison:Forest:Brown:1:30cm:3.2kg
+Weepinbell:Grass:Poison:Forest:Green, Yellow:2:1m:6.4kg
+Weezing:Poison:None:Urban:Purple:2:1m20:9.5kg
+Wigglytuff:Normal:Fairy:Grassland:Pink:2:1m:12kg
+Zapdos:Electric:Flying:Rare:Yellow:1:1m60:52.6kg
+Zubat:Poison:Flying:Cave:Blue, Purple:1:80cm:7.5kg

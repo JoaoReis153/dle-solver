@@ -1,0 +1,123 @@
+Abaddon:Male:Undead, Wraith:Hard Support, Offlane, Support:Universal:Melee:Easy:2005
+Alchemist:Male:Keen, Ogre:Carry, Midlane, Offlane:Strength:Melee:Easy:2006
+Ancient Apparition:Male:Elemental:Hard Support, Support:Intelligence:Ranged:Medium:2009
+Anti-Mage:Male:Human:Carry:Agility:Melee:Easy:2004
+Arc Warden:Other:Ancient:Midlane:Agility:Ranged:Hard:2012
+Axe:Male:Oglodi:Offlane:Strength:Melee:Easy:2005
+Bane:Other:Elemental:Hard Support, Support:Universal:Ranged:Medium:2004
+Batrider:Male:Troll:Hard Support, Midlane, Support:Universal:Ranged:Medium:2009
+Beastmaster:Male:Human:Offlane:Universal:Melee:Medium:2006
+Bloodseeker:Male:Human:Carry:Agility:Melee:Easy:2005
+Bounty Hunter:Male:Unknown:Hard Support, Support:Agility:Melee:Easy:2004
+Brewmaster:Male:Celestial:Offlane:Universal:Melee:Hard:2004
+Bristleback:Male:Unknown:Offlane:Strength:Melee:Easy:2005
+Broodmother:Female:Spider:Midlane, Offlane:Universal:Melee:Medium:2004
+Centaur Warrunner:Male:Centaur:Offlane:Strength:Melee:Easy:2004
+Chaos Knight:Male:Demon, Fundamental:Carry, Offlane:Strength:Melee:Easy:2004
+Chen:Male:Human:Hard Support, Support:Universal:Ranged:Hard:2004
+Clinkz:Male:Undead, Unknown:Midlane, Support:Agility:Ranged:Medium:2004
+Clockwerk:Male:Keen:Hard Support, Offlane, Support:Universal:Melee:Medium:2008
+Crystal Maiden:Female:Human:Hard Support, Support:Intelligence:Ranged:Easy:2004
+Dark Seer:Male:Outer Being:Offlane, Support:Universal:Melee:Easy:2007
+Dark Willow:Female:Fae:Hard Support, Support:Universal:Ranged:Medium:2017
+Dawnbreaker:Female:Star:Offlane:Strength:Melee:Easy:2021
+Dazzle:Male:Troll:Hard Support, Support:Universal:Ranged:Easy:2005
+Death Prophet:Female:Undead, Wraith:Midlane, Offlane:Intelligence:Ranged:Easy:2004
+Disruptor:Male:Oglodi:Hard Support, Support:Intelligence:Ranged:Medium:2007
+Doom:Male:Demon:Offlane:Strength:Melee:Medium:2004
+Dragon Knight:Male:Dragon, Human:Midlane, Offlane:Strength:Melee:Easy:2004
+Drow Ranger:Female:Human, Undead:Carry:Agility:Ranged:Easy:2004
+Earth Spirit:Male:Celestial:Midlane, Support:Strength:Melee:Hard:2013
+Earthshaker:Male:Elemental:Offlane, Support:Strength:Melee:Medium:2005
+Elder Titan:Male:Titan:Hard Support, Offlane, Support:Strength:Melee:Medium:2009
+Ember Spirit:Male:Celestial:Midlane:Agility:Melee:Medium:2011
+Enchantress:Female:Unknown:Hard Support, Support:Intelligence:Ranged:Medium:2005
+Enigma:Other:Fundamental:Hard Support, Offlane, Support:Universal:Ranged:Medium:2005
+Faceless Void:Male:Outer Being:Carry:Agility:Melee:Medium:2004
+Grimstroke:Male:Human, Magically altered:Hard Support, Support:Intelligence:Ranged:Medium:2018
+Gyrocopter:Male:Keen:Carry:Agility:Ranged:Easy:2010
+Hoodwink:Female:Unknown:Hard Support, Support:Agility:Ranged:Medium:2020
+Huskar:Male:Troll:Midlane, Offlane:Strength:Ranged:Easy:2007
+Invoker:Male:Human, Magicborn:Midlane, Support:Universal:Ranged:Hard:2005
+Io:Other:Fundamental:Hard Support, Support:Universal:Ranged:Hard:2010
+Jakiro:Male:Dragon:Hard Support, Support:Intelligence:Ranged:Easy:2006
+Juggernaut:Male:Human, Masked One:Carry:Agility:Melee:Easy:2004
+Keeper of the Light:Male:Fundamental, Human:Hard Support, Support:Intelligence:Ranged:Medium:2004
+Kunkka:Male:Human:Midlane, Offlane:Strength:Melee:Medium:2008
+Legion Commander:Female:Human:Offlane:Strength:Melee:Easy:2011
+Leshrac:Male:Elemental:Midlane:Intelligence:Ranged:Easy:2004
+Lich:Male:Undead:Hard Support, Support:Intelligence:Ranged:Easy:2004
+Lifestealer:Male:Oglodi:Carry, Offlane:Strength:Melee:Medium:2004
+Lina:Female:Human:Midlane, Support:Intelligence:Ranged:Easy:2004
+Lion:Male:Demon:Hard Support, Support:Intelligence:Ranged:Easy:2004
+Lone Druid:Male:Druid, Human:Midlane, Offlane:Universal:Ranged:Hard:2004
+Luna:Female:Human:Carry:Agility:Ranged:Easy:2004
+Lycan:Male:Human, Wolf:Offlane:Universal:Melee:Medium:2004
+Magnus:Male:Magnoceros:Offlane:Universal:Melee:Medium:2004
+Marci:Female:Human:Hard Support, Offlane, Support:Universal:Melee:Medium:2021
+Mars:Male:God:Offlane:Strength:Melee:Easy:2019
+Medusa:Female:Gorgon:Carry, Midlane:Agility:Ranged:Easy:2004
+Meepo:Male:Unknown:Midlane:Agility:Melee:Hard:2007
+Mirana:Female:Human:Hard Support, Support:Universal:Ranged:Medium:2006
+Monkey King:Male:God, Monkey:Carry, Midlane:Agility:Melee:Medium:2016
+Morphling:Other:Elemental:Carry, Midlane:Agility:Ranged:Hard:2004
+Muerta:Female:Undead, Wraith:Carry, Midlane:Intelligence:Ranged:Easy:2023
+Naga Siren:Female:Meranth:Carry:Agility:Melee:Medium:2004
+Nature's Prophet:Male:Nature's Prophet:Hard Support, Support:Intelligence:Ranged:Medium:2004
+Necrophos:Male:Human, Magically altered, Undead:Midlane, Offlane:Intelligence:Ranged:Easy:2004
+Night Stalker:Male:Creature of Darkness:Offlane:Strength:Melee:Easy:2004
+Nyx Assassin:Male:Scarab:Hard Support, Support:Universal:Melee:Medium:2004
+Ogre Magi:Male:Ogre:Hard Support, Support:Strength:Melee:Easy:2004
+Omniknight:Male:Human:Offlane, Support:Strength:Melee:Easy:2004
+Oracle:Male:Outer Being:Hard Support, Support:Intelligence:Ranged:Hard:2012
+Outworld Destroyer:Male:Outer Being:Midlane:Intelligence:Ranged:Medium:2006
+Pangolier:Male:Pangolier:Midlane, Offlane:Universal:Melee:Medium:2017
+Phantom Assassin:Female:Human:Carry:Agility:Melee:Easy:2004
+Phantom Lancer:Male:Unknown:Carry:Agility:Melee:Medium:2005
+Phoenix:Other:Star:Hard Support, Support:Universal:Ranged:Medium:2010
+Primal Beast:Male:Outer Being:Midlane, Offlane:Strength:Melee:Easy:2022
+Puck:Other:Dragon, Fae:Midlane:Intelligence:Ranged:Medium:2007
+Pudge:Male:Human, Undead:Hard Support, Offlane, Support:Strength:Melee:Medium:2004
+Pugna:Male:Nether Being:Hard Support, Support:Intelligence:Ranged:Medium:2004
+Queen of Pain:Female:Demon:Midlane:Intelligence:Ranged:Medium:2004
+Razor:Male:Revenant:Carry, Midlane, Offlane:Agility:Ranged:Easy:2004
+Riki:Male:Satyr:Carry:Agility:Melee:Easy:2004
+Rubick:Male:Unknown:Hard Support, Support:Intelligence:Ranged:Hard:2011
+Sand King:Male:Elemental:Offlane:Universal:Melee:Medium:2004
+Shadow Demon:Male:Demon:Hard Support, Support:Intelligence:Ranged:Medium:2010
+Shadow Fiend:Male:Demon:Carry, Midlane:Agility:Ranged:Medium:2005
+Shadow Shaman:Male:Troll:Hard Support, Support:Intelligence:Ranged:Easy:2004
+Silencer:Male:Human:Hard Support, Midlane, Support:Intelligence:Ranged:Medium:2004
+Skywrath Mage:Male:Skywrath:Hard Support, Support:Intelligence:Ranged:Easy:2011
+Slardar:Male:Meranth:Offlane:Strength:Melee:Easy:2004
+Slark:Male:Meranth:Carry:Agility:Melee:Medium:2009
+Sniper:Male:Keen:Carry, Midlane:Agility:Ranged:Easy:2004
+Spectre:Female:Demon:Carry:Agility:Melee:Medium:2006
+Spirit Breaker:Male:Elemental:Offlane, Support:Strength:Melee:Easy:2005
+Storm Spirit:Male:Celestial:Midlane:Intelligence:Ranged:Medium:2007
+Sven:Male:Human, Meranth:Carry:Strength:Melee:Easy:2004
+Techies:Male:Keen:Hard Support, Support:Universal:Ranged:Medium:2004
+Templar Assassin:Female:Human, Magicborn:Carry, Midlane:Agility:Ranged:Medium:2007
+Terrorblade:Male:Demon:Carry:Agility:Melee:Medium:2004
+Tidehunter:Male:Meranth:Offlane:Strength:Melee:Easy:2004
+Timbersaw:Male:Keen:Midlane, Offlane:Universal:Melee:Medium:2011
+Tinker:Male:Keen:Midlane:Intelligence:Ranged:Medium:2004
+Tiny:Male:Giant:Midlane, Offlane, Support:Strength:Melee:Medium:2005
+Treant Protector:Male:Treant:Hard Support, Support:Strength:Melee:Medium:2004
+Troll Warlord:Male:Troll:Carry:Agility:Melee, Ranged:Medium:2013
+Tusk:Male:Tusk:Offlane, Support:Strength:Melee:Easy:2010
+Underlord:Male:Demon:Offlane:Strength:Melee:Medium:2007
+Undying:Male:Undead:Hard Support, Offlane, Support:Strength:Melee:Easy:2007
+Ursa:Male:Ursa:Carry:Agility:Melee:Easy:2004
+Vengeful Spirit:Female:Skywrath:Hard Support, Support:Universal:Ranged:Easy:2004
+Venomancer:Male:Venomancer:Hard Support, Support:Universal:Ranged:Easy:2004
+Viper:Male:Dragon, Nether Being:Midlane, Offlane:Agility:Ranged:Easy:2004
+Visage:Male:Gargoyle, Undead:Midlane, Offlane:Universal:Ranged:Hard:2004
+Void Spirit:Male:Celestial:Midlane:Universal:Melee:Medium:2019
+Warlock:Male:Oglodi:Hard Support, Support:Intelligence:Ranged:Easy:2006
+Weaver:Male:Weaver:Carry:Agility:Ranged:Medium:2005
+Windranger:Female:Human:Midlane, Offlane, Support:Universal:Ranged:Medium:2008
+Winter Wyvern:Female:Dragon:Hard Support, Support:Universal:Ranged:Medium:2012
+Witch Doctor:Male:Troll:Hard Support, Support:Intelligence:Ranged:Easy:2006
+Wraith King:Male:Undead, Wraith:Carry, Offlane:Strength:Melee:Easy:2004
+Zeus:Male:God:Midlane, Support:Intelligence:Ranged:Easy:2004
