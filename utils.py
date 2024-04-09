@@ -11,9 +11,7 @@ def getFileFromLink(url):
 # Print the current working directory
     fileName = getFileNameFromLink(url)
     
-    
-
-    return Path("./Database/" + fileName)
+    return Path("./Files/" + fileName)
 
 def getFileNameFromLink(url):
     # Parse the URL to get the netloc (network location part)
