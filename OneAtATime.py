@@ -15,7 +15,7 @@ import concurrent.futures
 
 from pathlib import Path
 
-from utils import getFileFromLink, getLastChampGiven, processGuess, sendGuess, Print
+from utils import getFileFromLink, getLastChampGiven, processGuess, sendGuess, Print, colorsAllGreen
 from objects import Champion, Answer
 
 def runOneAtATime(lst):
@@ -53,18 +53,22 @@ def getSolution(driver, url, FIRSTGUESS = "", showPrints = True):
         champions.append(Champion(line.replace(", ", ",")))
 
     answer = Answer(champions)
+    
+    attrsLen = answer.getAttributesLength()
 
     driver.get(url)
 
     actions = ActionChains(driver)
     wait = WebDriverWait(driver, 10)
 
-    driver.implicitly_wait(5)
-
-    button = driver.find_element(By.CLASS_NAME, "fc-button-label")
-
-    button.click()
-
+    try:
+        # Wait for up to 10 seconds for the button to be clickable
+        button = WebDriverWait(driver, 2).until(
+            EC.element_to_be_clickable((By.CLASS_NAME, "fc-button-label"))
+        )
+        button.click()
+    except Exception as e:
+        print(f"Error: {e}")
     #firstGuess = champions[random.randint(0, len(champions) - 1)]
     #most optimal: Varus
     if FIRSTGUESS != "":
@@ -79,10 +83,11 @@ def getSolution(driver, url, FIRSTGUESS = "", showPrints = True):
 
     guess, colors = processGuess(showPrints, answer, driver)
 
-    while(len(colors) != 7):
+    while(len(colors) != attrsLen):
         guess, colors = processGuess(showPrints, answer, driver)
 
     while colors != "ggggggg" :
+        print("gugugu")
         answer.addTry(guess, colors)
 
         print(answer)
@@ -94,13 +99,13 @@ def getSolution(driver, url, FIRSTGUESS = "", showPrints = True):
         sendGuess(showPrints, driver, input_element, guess, answer)
         guess, colors = processGuess(showPrints, answer, driver)
 
-    if colors == "ggggggg":
+    if colorsAllGreen(colors):
         Print(showPrints, ".")
         Print(showPrints, "You won")
         Print(showPrints, ".")
 
 
-    time.sleep(50)
+    time.sleep(5)
 
 #    driver.quit()
 

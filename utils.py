@@ -54,6 +54,12 @@ def getLastChampGiven(answer, driver):
 
     return champ, lastElement
 
+def colorsAllGreen(colors):
+    for c in colors:
+        if c != "g":
+            return False
+    return True
+
 def processGuess(showPrints, answer, driver):
 
     guess, lastElement = getLastChampGiven(answer, driver)

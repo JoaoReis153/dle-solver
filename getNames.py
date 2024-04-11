@@ -40,7 +40,7 @@ def loadDatabase(answer, site):
     driver.get(site)
 
     actions = ActionChains(driver)
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 5)
 
     try:
         pop_up_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "fc-button-label")))
@@ -55,21 +55,32 @@ def loadDatabase(answer, site):
         input_element = wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='IZ-select__input-wrap']//input")))
         input_element.clear()
         input_element.send_keys(a)
-
+        
+        time.sleep(2)
         champions = driver.find_elements(By.CLASS_NAME, 'IZ-select__item')
 
         for champion in champions:
-            champion_name = champion.text.strip()
-            if champion_name not in data and champion_name != '':
-                data.append(champion_name)
+            print("")
+            print(champion.text)
+            champion_name = champion.text.strip().replace("\nAlias", "")
 
+            champion_name = champion_name.split(":")[0] if ":" in champion_name else champion_name
+            
+
+            if champion_name not in data and champion_name != '':
+                data.append(champion_name.strip())
+
+    for a in data:
+        print("-")
+        print(a)
 
 
 
     input_element.clear()
 
-    data.remove(answer)
-    data.append(answer)
+    if(answer in data):
+        data.remove(answer)
+        data.append(answer)
 
     print("Waiting for data...")
     

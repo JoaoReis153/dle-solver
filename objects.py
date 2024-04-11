@@ -6,13 +6,8 @@ class Champion:
        self.attributes = fromString.split(":")
        self.attributes = [attr.split(",") for attr in self.attributes]
        c = 0
-       #k = 0
        for a in self.attributes:
-           #k += 1
-           #print(k)
-           #print(a)
            for b in a:
-              #if(k == 7): c+=1
                c+=1
        self.count = c
        aux = [item[0] if len(item) == 1 else item for item in self.attributes]
@@ -27,6 +22,9 @@ class Answer:
     def __init__(self, championsList):
         self.possibleChampions = championsList
         self.possibleChampions.sort(key=lambda x: x.count, reverse = True)
+
+    def getAttributesLength(self):
+        return len(self.possibleChampions[0].attributes)
 
     def getChampByName(self, name):
         for champion in self.possibleChampions:
@@ -105,6 +103,7 @@ class Answer:
 
 
 
+        print("a:  " + champion)
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1:
@@ -144,6 +143,7 @@ class Answer:
 
         for i in range(0, len(combination)):
             k = i+1
+            print(k)
 
             if(combination[i] == "g"):
                 self.gotGreen(champion, k)
