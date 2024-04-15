@@ -22,7 +22,7 @@ def runOneAtATime(lst):
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-    runPokedle(driver)
     runLoldle(driver)
+    runPokedle(driver)
 
     driver.quit()
