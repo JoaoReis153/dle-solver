@@ -21,7 +21,7 @@ site4 = "https://dotadle.net/classic"
 answer = "Jesus Burgess"
 site5 = "https://onepiecedle.net/classic"
 
-sites = [site5, site1, site2, site3, site4]
+sites = [site1, site2, site3, site4]
 
 
 runOneAtATime(sites)

@@ -1,3 +1,5 @@
+from getSolution import getSolution
+
 import re
 
 
@@ -62,7 +64,7 @@ class Answer:
             possible_attrs = possibleChampion.attributes[index] if isinstance(possibleChampion.attributes[index], list) else possibleChampion.attributes[index].split(",")
 
             champion_attrs = champion.attributes[index] if isinstance(champion.attributes[index], list) else champion.attributes[index].split(",")
-            
+
             for possibleAttribute in possible_attrs:
                     if possibleAttribute not in champion_attrs:
                         newPossibleChampions.append(possibleChampion)
@@ -100,16 +102,13 @@ class Answer:
 
 
     def gotInferiorDate(self, champion, index):
-
-
-
-        print("a:  " + champion)
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1:
 
-                possibleChampionInt = "".join(re.findall(r'\d+\.\d+|\d+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'\d+\.\d+|\d+', champion.attributes[index]))
+                possibleChampionInt = "".join(re.findall(r'[0-9.]+', possibleChampion.attributes[index]))
+                givenChampionInt = "".join(re.findall(r'[0-9.]+', champion.attributes[index]))
+
                 if(float(possibleChampionInt) < float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
 
@@ -121,8 +120,9 @@ class Answer:
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
-                possibleChampionInt = "".join(re.findall(r'\d+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'\d+', champion.attributes[index]))
+                possibleChampionInt = "".join(re.findall(r'[0-9.]+', possibleChampion.attributes[index]))
+                givenChampionInt = "".join(re.findall(r'[0-9.]+', champion.attributes[index]))
+
                 if(float(possibleChampionInt) > float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
 
@@ -167,3 +167,7 @@ class Answer:
 
         return f"{re}\n--------------------------------"
 
+
+def runPokedle(driver):
+  url = "https://pokedle.net/classic"
+  getSolution(driver, url, Champion, Answer)

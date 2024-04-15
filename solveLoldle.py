@@ -1,3 +1,5 @@
+from getSolution import getSolution
+
 import re
 
 
@@ -62,7 +64,7 @@ class Answer:
             possible_attrs = possibleChampion.attributes[index] if isinstance(possibleChampion.attributes[index], list) else possibleChampion.attributes[index].split(",")
 
             champion_attrs = champion.attributes[index] if isinstance(champion.attributes[index], list) else champion.attributes[index].split(",")
-            
+
             for possibleAttribute in possible_attrs:
                     if possibleAttribute not in champion_attrs:
                         newPossibleChampions.append(possibleChampion)
@@ -100,10 +102,6 @@ class Answer:
 
 
     def gotInferiorDate(self, champion, index):
-
-
-
-        print("a:  " + champion)
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1:
@@ -143,7 +141,6 @@ class Answer:
 
         for i in range(0, len(combination)):
             k = i+1
-            print(k)
 
             if(combination[i] == "g"):
                 self.gotGreen(champion, k)
@@ -167,3 +164,7 @@ class Answer:
 
         return f"{re}\n--------------------------------"
 
+
+def runLoldle(driver):
+  url = "https://loldle.net/classic"
+  getSolution(driver, url, Champion, Answer)
