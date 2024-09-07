@@ -10,7 +10,9 @@ from selenium.common.exceptions import NoSuchElementException
 
 from solveLoldle import runLoldle
 from solvePokedle import runPokedle
-
+from solveSmashdle import runSmashdle
+from solveDotadle import runDotadle
+from solveOnepiecedle import runOnepiecedle
 
 
 def runOneAtATime(lst):
@@ -22,7 +24,10 @@ def runOneAtATime(lst):
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-    runLoldle(driver)
-    runPokedle(driver)
+    #runLoldle(driver)
+    #runPokedle(driver)
+    #runSmashdle(driver)
+    #runDotadle(driver)
+    runOnepiecedle(driver)
 
     driver.quit()

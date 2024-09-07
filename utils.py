@@ -9,9 +9,13 @@ import os
 
 def getFileFromLink(url):
 # Print the current working directory
+
+    # Get the directory of the current file
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
     fileName = getFileNameFromLink(url)
-    
-    return Path("./Files/" + fileName)
+        
+    return Path(current_dir + "/Files/" + fileName)
 
 def getFileNameFromLink(url):
     # Parse the URL to get the netloc (network location part)
@@ -63,8 +67,6 @@ def colorsAllGreen(colors):
 def processGuess(showPrints, answer, driver):
 
     guess, lastElement = getLastChampGiven(answer, driver)
- 
-    #square 6 animate__animated animate__flipInY square-inferior
 
     # Find all 'div' elements inside the 'square-container'
     attributesDivs = lastElement.find_element(By.CLASS_NAME, "square-container").find_elements(By.TAG_NAME, "div")
@@ -76,8 +78,9 @@ def processGuess(showPrints, answer, driver):
 
 
     geral = info.split("\n")
-
-    while geral[-4].strip() == "square 6":
+    loaded = False
+    cleaned_list = []
+    while not loaded:
 
         time.sleep(0.2)
         # Find all 'div' elements inside the 'square-container'
@@ -90,17 +93,28 @@ def processGuess(showPrints, answer, driver):
 
         geral = info.split("\n")
 
-    array_of_lists = info.replace("square-content", "").replace("square", "").replace("champion-icon-names",  "").replace(" animate__animated animate__flipInY -", "").split("\n")
-    cleaned_list = [item for item in array_of_lists if item != '']
 
-    colors = cleaned_list[1:]
+        array_of_lists = info.replace("square-content", "").replace("square", "").replace("champion-icon-names",  "").replace(" animate__animated animate__flipInY -", "").split("\n")
+
+        cleaned_list = [item for item in array_of_lists if item != '']
+
+        loaded = any(c.isalpha() for c in cleaned_list[-1])
+
+    firstCharacteristicIndex = find_first_zero(cleaned_list)
+
+    colors = cleaned_list[firstCharacteristicIndex:]
+
     colors = "".join([s[2:3] for s in colors])
 
     colors = colors.replace("a", "")
 
-    
     Print(showPrints, "Colors: " + str(colors))
 
-
     return guess, colors
+
+def find_first_zero(arr):
+    for index, value in enumerate(arr):
+        if "0" in str(value):
+            return index
+    return -1
 

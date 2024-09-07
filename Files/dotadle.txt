@@ -4,7 +4,7 @@ Ancient Apparition:Male:Elemental:Hard Support, Support:Intelligence:Ranged:Medi
 Anti-Mage:Male:Human:Carry:Agility:Melee:Easy:2004
 Arc Warden:Other:Ancient:Midlane:Agility:Ranged:Hard:2012
 Axe:Male:Oglodi:Offlane:Strength:Melee:Easy:2005
-Bane:Other:Elemental:Hard Support, Support:Universal:Ranged:Medium:2004
+Bane:Male:Elemental:Hard Support, Support:Universal:Ranged:Medium:2004
 Batrider:Male:Troll:Hard Support, Midlane, Support:Universal:Ranged:Medium:2009
 Beastmaster:Male:Human:Offlane:Universal:Melee:Medium:2006
 Bloodseeker:Male:Human:Carry:Agility:Melee:Easy:2005
@@ -45,14 +45,7 @@ Juggernaut:Male:Human, Masked One:Carry:Agility:Melee:Easy:2004
 Keeper of the Light:Male:Fundamental, Human:Hard Support, Support:Intelligence:Ranged:Medium:2004
 Kunkka:Male:Human:Midlane, Offlane:Strength:Melee:Medium:2008
 Legion Commander:Female:Human:Offlane:Strength:Melee:Easy:2011
-Leshrac:Male:Elemental:Midlane:Intelligence:Ranged:Easy:2004
-Lich:Male:Undead:Hard Support, Support:Intelligence:Ranged:Easy:2004
-Lifestealer:Male:Oglodi:Carry, Offlane:Strength:Melee:Medium:2004
-Lina:Female:Human:Midlane, Support:Intelligence:Ranged:Easy:2004
-Lion:Male:Demon:Hard Support, Support:Intelligence:Ranged:Easy:2004
 Lone Druid:Male:Druid, Human:Midlane, Offlane:Universal:Ranged:Hard:2004
-Luna:Female:Human:Carry:Agility:Ranged:Easy:2004
-Lycan:Male:Human, Wolf:Offlane:Universal:Melee:Medium:2004
 Magnus:Male:Magnoceros:Offlane:Universal:Melee:Medium:2004
 Marci:Female:Human:Hard Support, Offlane, Support:Universal:Melee:Medium:2021
 Mars:Male:God:Offlane:Strength:Melee:Easy:2019
@@ -104,7 +97,7 @@ Timbersaw:Male:Keen:Midlane, Offlane:Universal:Melee:Medium:2011
 Tinker:Male:Keen:Midlane:Intelligence:Ranged:Medium:2004
 Tiny:Male:Giant:Midlane, Offlane, Support:Strength:Melee:Medium:2005
 Treant Protector:Male:Treant:Hard Support, Support:Strength:Melee:Medium:2004
-Troll Warlord:Male:Troll:Carry:Agility:Melee, Ranged:Medium:2013
+Troll Warlord:Male:Troll:Carry:Agility:Melee, Ranged:Medium:2004
 Tusk:Male:Tusk:Offlane, Support:Strength:Melee:Easy:2010
 Underlord:Male:Demon:Offlane:Strength:Melee:Medium:2007
 Undying:Male:Undead:Hard Support, Offlane, Support:Strength:Melee:Easy:2007

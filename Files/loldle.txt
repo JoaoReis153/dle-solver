@@ -7,20 +7,20 @@ Amumu:Male:Jungle:Undead, Yordle:Mana:Melee:Shurima:2009
 Anivia:Female:Middle:God, Spirit:Mana:Ranged:Freljord:2009
 Annie:Female:Middle:Human, Magicborn:Mana:Ranged:Noxus, Runeterra:2009
 Aphelios:Male:Bottom:Human, Spiritualist:Mana:Ranged:Targon:2019
-Ashe:Female:Bottom, Support:Human, Iceborn:Mana:Ranged:Freljord:2009
+Ashe:Female:Bottom:Human, Iceborn:Mana:Ranged:Freljord:2009
 Aurelion Sol:Male:Middle:Celestial, Dragon:Mana:Ranged:Runeterra, Targon:2016
 Azir:Male:Middle:God-Warrior:Mana:Ranged:Shurima:2014
 Bard:Male:Support:Celestial:Mana:Ranged:Runeterra:2015
 Bel'Veth:Female:Jungle:Void-Being:Manaless:Melee:Void:2022
 Blitzcrank:Other:Support:Golem:Mana:Melee:Zaun:2009
-Brand:Male:Jungle, Support:Human, Magically Altered:Mana:Ranged:Freljord, Runeterra:2011
+Brand:Male:Jungle, Middle, Support:Human, Magically Altered:Mana:Ranged:Freljord, Runeterra:2011
 Braum:Male:Support:Human, Iceborn:Mana:Melee:Freljord:2014
 Briar:Female:Jungle:Golem:Health costs:Melee:Noxus:2023
 Caitlyn:Female:Bottom:Human:Mana:Ranged:Piltover:2011
 Camille:Female:Top:Cyborg, Human:Mana:Melee:Piltover:2016
-Cassiopeia:Female:Middle:Human, Magically Altered:Mana:Ranged:Noxus, Shurima:2010
+Cassiopeia:Female:Middle, Top:Human, Magically Altered:Mana:Ranged:Noxus, Shurima:2010
 Cho'Gath:Male:Top:Void-Being:Mana:Melee:Void:2009
-Corki:Male:Middle:Yordle:Mana:Ranged:Bandle City, Piltover:2009
+Corki:Male:Bottom, Middle:Yordle:Mana:Ranged:Bandle City, Piltover:2009
 Darius:Male:Top:Human:Mana:Melee:Noxus:2012
 Diana:Female:Jungle, Middle:Aspect, Human:Mana:Melee:Targon:2012
 Dr. Mundo:Male:Top:Chemically Altered, Human:Health costs:Melee:Zaun:2009
@@ -32,15 +32,15 @@ Ezreal:Male:Bottom:Human, Magicborn:Mana:Ranged:Piltover:2010
 Fiddlesticks:Other:Jungle:Demon, Spirit:Mana:Ranged:Runeterra:2009
 Fiora:Female:Top:Human:Mana:Melee:Demacia:2012
 Fizz:Male:Middle:Yordle:Mana:Melee:Bilgewater:2011
-Galio:Male:Middle, Support:Golem:Mana:Melee:Demacia:2010
+Galio:Male:Middle:Golem:Mana:Melee:Demacia:2010
 Gangplank:Male:Top:Human:Mana:Melee:Bilgewater:2009
 Garen:Male:Top:Human:Manaless:Melee:Demacia:2010
 Gnar:Male:Top:Yordle:Rage:Melee, Ranged:Freljord:2014
-Gragas:Male:Jungle, Top:Human:Mana:Melee:Freljord:2010
+Gragas:Male:Jungle, Top:Human, Iceborn:Mana:Melee:Freljord:2010
 Graves:Male:Jungle:Human:Mana:Ranged:Bilgewater:2011
 Gwen:Female:Top:Human, Magically Altered:Mana:Melee:Camavor, Shadow Isles:2021
 Hecarim:Male:Jungle:Undead:Mana:Melee:Camavor, Shadow Isles:2012
-Heimerdinger:Male:Middle, Support, Top:Yordle:Mana:Ranged:Piltover:2009
+Heimerdinger:Male:Middle, Top:Yordle:Mana:Ranged:Piltover:2009
 Hwei:Male:Middle, Support:Human, Magicborn:Mana:Ranged:Ionia:2023
 Illaoi:Female:Top:Human, Spiritualist:Mana:Melee:Bilgewater:2015
 Irelia:Female:Middle, Top:Human, Spiritualist:Mana:Melee:Ionia:2010
@@ -73,9 +73,9 @@ Lissandra:Female:Middle:Human, Iceborn:Mana:Ranged:Freljord:2013
 Lucian:Male:Bottom:Human:Mana:Ranged:Demacia, Shadow Isles:2013
 Lulu:Female:Support:Yordle:Mana:Ranged:Bandle City:2012
 Lux:Female:Middle, Support:Human, Magicborn:Mana:Ranged:Demacia:2010
-Malphite:Male:Top:Golem:Mana:Melee:Ixtal, Shurima:2009
+Malphite:Male:Middle, Top:Golem:Mana:Melee:Ixtal, Shurima:2009
 Malzahar:Male:Middle:Human, Void-Being:Mana:Ranged:Shurima, Void:2010
-Maokai:Male:Jungle, Support:Spirit:Mana:Melee:Shadow Isles:2011
+Maokai:Male:Support:Spirit:Mana:Melee:Shadow Isles:2011
 Master Yi:Male:Jungle:Human, Spiritualist:Mana:Melee:Ionia:2009
 Milio:Male:Support:Human, Magicborn:Mana:Ranged:Ixtal:2023
 Miss Fortune:Female:Bottom:Human:Mana:Ranged:Bilgewater:2010
@@ -93,8 +93,8 @@ Nunu & Willump:Male:Jungle:Human, Yeti:Mana:Melee:Freljord:2009
 Olaf:Male:Top:Human, Iceborn:Mana:Melee:Freljord:2010
 Orianna:Female:Middle:Golem:Mana:Ranged:Piltover:2011
 Ornn:Male:Top:God, Spirit:Mana:Melee:Freljord:2017
-Pantheon:Male:Middle, Support, Top:Aspect, Human:Mana:Melee:Targon:2010
-Poppy:Female:Jungle, Top:Yordle:Mana:Melee:Demacia:2010
+Pantheon:Male:Support, Top:Aspect, Human:Mana:Melee:Targon:2010
+Poppy:Female:Jungle, Support, Top:Yordle:Mana:Melee:Demacia:2010
 Pyke:Male:Support:Revenant:Mana:Melee:Bilgewater:2018
 Qiyana:Female:Middle:Human, Magicborn:Mana:Melee:Ixtal:2019
 Quinn:Female:Top:Human:Mana:Ranged:Demacia:2013
@@ -107,23 +107,24 @@ Renekton:Male:Top:God-Warrior:Fury:Melee:Shurima:2011
 Rengar:Male:Jungle:Vastayan:Ferocity:Melee:Ixtal, Shurima:2012
 Riven:Female:Top:Human:Manaless:Melee:Ionia, Noxus:2011
 Rumble:Male:Top:Yordle:Heat:Melee:Bandle City:2011
-Ryze:Male:Middle:Human, Magically Altered:Mana:Ranged:Runeterra:2009
+Ryze:Male:Middle, Top:Human, Magically Altered:Mana:Ranged:Runeterra:2009
 Samira:Female:Bottom:Human:Mana:Ranged:Noxus, Shurima:2020
 Sejuani:Female:Jungle:Human, Iceborn:Mana:Melee:Freljord:2012
 Senna:Female:Support:Human, Undead:Mana:Ranged:Shadow Isles:2019
 Seraphine:Female:Support:Human, Magicborn:Mana:Ranged:Piltover, Zaun:2020
 Sett:Male:Top:Human, Vastayan:Grit:Melee:Ionia:2020
-Shaco:Male:Jungle, Support:Spirit:Mana:Melee:Runeterra:2009
-Shen:Male:Top:Human, Spiritualist:Energy:Melee:Ionia:2010
+Shaco:Male:Jungle:Spirit:Mana:Melee:Runeterra:2009
+Shen:Male:Support, Top:Human, Spiritualist:Energy:Melee:Ionia:2010
 Shyvana:Female:Jungle:Dragon, Magically Altered:Fury:Melee:Demacia:2011
 Singed:Male:Top:Chemically Altered, Human:Mana:Melee:Piltover, Zaun:2009
 Sion:Male:Top:Revenant:Mana:Melee:Noxus:2009
 Sivir:Female:Bottom:Human:Mana:Ranged:Shurima:2009
-Skarner:Male:Jungle:Brackern:Mana:Melee:Shurima:2011
+Skarner:Male:Jungle, Top:Brackern:Mana:Melee:Ixtal:2011
+Smolder:Male:Bottom:Dragon:Mana:Ranged:Camavor, Noxus:2024
 Sona:Female:Support:Human, Magicborn:Mana:Ranged:Demacia, Ionia:2010
 Soraka:Female:Support:Celestial:Mana:Ranged:Ionia, Targon:2009
 Swain:Male:Support:Human, Magically Altered:Mana:Ranged:Noxus:2010
-Sylas:Male:Middle:Human, Magicborn:Mana:Melee:Demacia, Freljord:2019
+Sylas:Male:Jungle, Middle:Human, Magicborn:Mana:Melee:Demacia, Freljord:2019
 Syndra:Female:Middle:Human, Magicborn:Mana:Ranged:Ionia:2012
 Tahm Kench:Male:Support, Top:Demon, Spirit:Mana:Melee:Bilgewater, Runeterra:2015
 Taliyah:Female:Jungle, Middle:Human, Magicborn:Mana:Ranged:Shurima:2016
@@ -134,19 +135,19 @@ Thresh:Male:Support:Undead:Mana:Ranged:Shadow Isles:2013
 Tristana:Female:Bottom, Middle:Yordle:Mana:Ranged:Bandle City:2009
 Trundle:Male:Jungle, Top:Iceborn, Troll:Mana:Melee:Freljord:2010
 Tryndamere:Male:Top:Human, Magically Altered:Fury:Melee:Freljord:2009
-Twisted Fate:Male:Middle:Human, Magicborn:Mana:Ranged:Bilgewater:2009
+Twisted Fate:Male:Middle, Top:Human, Magicborn:Mana:Ranged:Bilgewater:2009
 Twitch:Male:Bottom:Chemically Altered, Rat:Mana:Ranged:Zaun:2009
-Udyr:Male:Jungle, Top:Human, Spiritualist:Mana:Melee:Freljord, Ionia:2009
+Udyr:Male:Jungle:Human, Spiritualist:Mana:Melee:Freljord, Ionia:2009
 Urgot:Male:Top:Chemically Altered, Cyborg, Human:Mana:Ranged:Noxus, Zaun:2010
 Varus:Male:Bottom:Darkin, Human:Mana:Ranged:Ionia, Runeterra, Shurima:2012
-Vayne:Female:Bottom:Human:Mana:Ranged:Demacia:2011
+Vayne:Female:Bottom, Top:Human:Mana:Ranged:Demacia:2011
 Veigar:Male:Middle:Yordle:Mana:Ranged:Bandle City, Runeterra, Shadow Isles:2009
 Vel'Koz:Male:Middle, Support:Void-Being:Mana:Ranged:Void:2014
 Vex:Female:Middle:Yordle:Mana:Ranged:Bandle City, Shadow Isles:2021
 Vi:Female:Jungle:Human:Mana:Melee:Piltover, Zaun:2012
 Viego:Male:Jungle:Undead:Manaless:Melee:Camavor, Shadow Isles:2021
 Viktor:Male:Middle:Cyborg, Human:Mana:Ranged:Piltover, Zaun:2011
-Vladimir:Male:Middle:Human, Magically Altered:Bloodthirst:Ranged:Camavor, Noxus, Shadow Isles:2010
+Vladimir:Male:Middle, Top:Human, Magically Altered:Bloodthirst:Ranged:Camavor, Noxus, Shadow Isles:2010
 Volibear:Male:Jungle, Top:God, Spirit:Mana:Melee:Freljord:2011
 Warwick:Male:Jungle, Top:Chemically Altered, Cyborg, Human:Mana:Melee:Zaun:2009
 Wukong:Male:Jungle, Top:Vastayan:Mana:Melee:Ionia:2011

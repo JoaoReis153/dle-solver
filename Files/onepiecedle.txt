@@ -1,112 +1,128 @@
-Arlong:Male:Arlong Pirates:None:20M:2m63:Grand Line:East Blue
-Ashura Doji:Male:Mt. Atama Thieves:None:0:5m44:Grand Line:Wano Country
-Bartholomew Kuma:Male:Revolutionary Army:Paramecia:296M:6m89:South Blue:Sky Island
-Bartolomeo:Male:Barto Club:Paramecia:200M:2m20:East Blue:Dressrosa
-Basil Hawkins:Male:Hawkins Pirates:Paramecia:320M:2m10:North Blue:Summit War
-Bellamy:Male:Donquixote Pirates:Paramecia:195M:2m40:Unknown:Sky Island
-Bellemere:Female:Marines:None:0:1m86:East Blue:East Blue
-Benn. Beckman:Male:Red Hair Pirates:None:0:2m06:North Blue:East Blue
-Bentham:Male:Newkama Land:Paramecia:32M:2m38:East Blue:Arabasta
-Bepo:Male:Heart Pirates:None:500:2m40:Zou:Summit War
-Boa Hancock:Female:Kuja:Paramecia:1.7B:1m91:Calm Belt:Summit War
-Borsalino:Male:Marines:Logia:3B:3m02:North Blue:Summit War
-Brogy:Male:Giant Warrior Pirates:None:100M:21m30:Grand Line:Arabasta
-Brook:Male:Straw Hat Pirates:Paramecia:383M:2m77:West Blue:Thriller Bark
-Buggy:Male:Cross Guild:Paramecia:3.2B:1m92:Grand Line:East Blue
-Caesar Clown:Male:Germa Kingdom:Logia:300M:3m09:Grand Line:Dressrosa
-Capone Bege:Male:Fire Tank Pirates:Paramecia:350M:1m66:West Blue:Summit War
-Caribou:Male:Caribou Pirates:Logia:210M:2m28:North Blue:Fish-Man Island
-Carrot:Female:Mokomo Dukedom, Inuarashi Musketeer Squad:None:0:1m61:Grand Line:Whole Cake Island
-Cavendish:Male:Beautiful Pirates:None:330M:2m08:Grand Line:Dressrosa
-Charlotte Katakuri:Male:Charlotte Family:Paramecia:1.1B:5m09:Grand Line:Whole Cake Island
-Charlotte Linlin:Female:Big Mom Pirates:Paramecia:4.4B:8m80:Grand Line:Fish-Man Island
-Charlotte Mont d'Or:Male:Charlotte Family:Paramecia:120M:2m60:Grand Line:Whole Cake Island
-Charlotte Pudding:Female:Charlotte Family:Paramecia:0:1m66:Grand Line:Fish-Man Island
-Crocodile:Male:Cross Guild:Logia:2B:2m53:Grand Line:Arabasta
-Denjiro:Male:Kozuki Family:None:0:3m06:Grand Line:Wano Country
-Don Krieg:Male:Krieg Pirates:None:17M:2m43:East Blue:East Blue
-Donquixote Doflamingo:Male:Donquixote Pirates:Paramecia:340M:3m05:Red Line:Sky Island
-Donquixote Rosinante:Male:Marines:Paramecia:0:2m93:Red Line:Dressrosa
-Dracule Mihawk:Male:Cross Guild:None:3.6B:1m98:Unknown:East Blue
-Edward Newgate:Male:Whitebeard Pirates:Paramecia:5B:6m66:Grand Line:Arabasta
-Emporio Ivankov:Male:Revolutionary Army:Paramecia:100M:4m49:Grand Line:Summit War
-Enel:Male:Automata:Logia:0:2m66:Sky Islands:Sky Island
-Eustass Kid:Male:Kid Pirates Ninja-Pirate-Mink-Samurai Alliance:Paramecia:3B:2m05:South Blue:Summit War
-Foxy:Male:Foxy Pirates:Paramecia:24M:1m80:South Blue:Water 7
-Franky:Male:Straw Hat Pirates:None:394M:2m40:South Blue:Water 7
-Galdino:Male:Cross Guild:Paramecia:24M:1m79:South Blue:Arabasta
-Gecko Moria:Male:Thriller Bark Pirates:Paramecia:320M:6m92:West Blue:Thriller Bark
-Gin:Male:Krieg Pirates:None:12M:1m86:East Blue:East Blue
-Gol D. Roger:Male:Roger Pirates:None:5.6B:2m74:East Blue:East Blue
-Hiriluk:Male:None:None:0:2m13:Grand Line:Arabasta
-Hody Jones:Male:New Fish-Man Pirates:None:0:3m31:Grand Line:Fish-Man Island
-Hogback:Male:Thriller Bark Pirates:None:0:2m23:West Blue:Thriller Bark
-Iceburg:Male:Galley-La Company:None:0:1m99:Grand Line:Water 7
-Inuarashi:Male:Mokomo Dukedom:None:0:5m11:Grand Line:Whole Cake Island
-Issho:Male:Marines:Paramecia:3B:2m70:Grand Line:Dressrosa
-Jabra:Male:CP0:Zoan:0:2m12:North Blue:Water 7
-Jesus Burgess:Male:Blackbeard Pirates:Paramecia:20M:3m55:Grand Line:Sky Island
-Jewelry. Bonney:Female:Bonney Pirates:Paramecia:320M:1m74:Red Line:Summit War
-Jinbe:Male:Straw Hat Pirates:None:1.1B:3m01:Grand Line:Summit War
-Kaido:Male:Beasts Pirates:Zoan:4.6B:7m10:Grand Line:Dressrosa
-Kaku:Male:CP0:Zoan:0:1m93:East Blue:Water 7
-Kawamatsu:Male:Kozuki Family:None:0:2m71:Unknown:Wano Country
-Kikunojo:Female:Kozuki Family:None:0:2m87:Grand Line:Wano Country
-Kin'emon:Male:Kozuki Family:Paramecia:0:2m95:Grand Line:Dressrosa
-Koby:Male:Marines:None:500M:1m67:East Blue:East Blue
-Kozuki Hiyori:Female:Kozuki Family:None:0:1m70:Grand Line:Wano Country
-Kozuki Oden:Male:Kozuki Family:None:0:3m82:Grand Line:Wano Country
-Kureha:Female:Sakura Kingdom:None:0:1m88:Grand Line:Arabasta
-Kuro:Male:Black Cat Pirates:None:16M:2m07:East Blue:East Blue
-Kurozumi Kanjuro:Male:Kurozumi Family:Paramecia:0:3m47:Unknown:Dressrosa
-Kurozumi Tama:Female:Kurozumi Family:Paramecia:0:1m08:Unknown:Wano Country
-Kuzan:Male:Blackbeard Pirates:Logia:0:2m98:South Blue:Water 7
-Kyros:Male:Riku Royal Army:None:0:2m98:Grand Line:Dressrosa
-Marco:Male:Whitebeard Pirates:Zoan:1.4B:2m03:Grand Line:Sky Island
-Marshall D. Teach:Male:Blackbeard Pirates:Logia:4B:3m44:Grand Line:Sky Island
-Monet:Female:Donquixote Pirates:Logia:0:2m27:North Blue:Dressrosa
-Monkey D. Dragon:Male:Revolutionary Army:None:0:2m56:East Blue:East Blue
-Monkey D. Garp:Male:Marines:None:3B:2m87:East Blue:East Blue
-Monkey D. Luffy:Male:Straw Hat Pirates:Paramecia:3B:1m74:East Blue:East Blue
-Mont Blanc Noland:Male:Lvneel:None:0:2m20:North Blue:Sky Island
-Morgans:Male:World Economy News Paper:Zoan:0:3m05:Grand Line:Whole Cake Island
-Nami:Female:Straw Hat Pirates:None:366M:1m70:East Blue:East Blue
-Nefertari Vivi:Female:Arabasta Kingdom:None:0:1m69:Grand Line:Arabasta
-Nekomamushi:Male:Mokomo Dukedom:None:0:5m22:Grand Line:Whole Cake Island
-Nico Robin:Female:Straw Hat Pirates:Paramecia:930M:1m88:West Blue:Arabasta
-Nojiko:Female:None:None:0:1m70:East Blue:East Blue
-Oars:Male:Thriller Bark Pirates:None:0:0cm:North Blue:Thriller Bark
-Paulie:Male:Galley-La Company:None:0:1m95:Grand Line:Water 7
-Pedro:Male:Mokomo Dukedom:None:382M:2m33:Grand Line:Whole Cake Island
-Pekoms:Male:Big Mom Pirates:Zoan:330M:2m32:Unknown:Fish-Man Island
-Pell:Male:Arabasta Kingdom:Zoan:0:1m89:Grand Line:Arabasta
-Perona:Female:Dracule Mihawk:Paramecia:0:1m60:West Blue:Thriller Bark
-Portgas D. Ace:Male:Whitebeard Pirates:Logia:550M:1m85:South Blue:Arabasta
-Raizo:Male:Kozuki Family:Paramecia:0:3m11:Grand Line:Whole Cake Island
-Rebecca:Female:Dressrosa:None:0:1m71:Grand Line:Dressrosa
-Rob Lucci:Male:CP0:Zoan:0:2m12:Grand Line:Water 7
-Roronoa Zoro:Male:Straw Hat Pirates:None:1.1B:1m81:East Blue:East Blue
-Sabo:Male:Revolutionary Army:Logia:602M:1m87:East Blue:Summit War
-Sakazuki:Male:Marines:Logia:0:3m06:North Blue:Water 7
-Sengoku:Male:Marines:Zoan:0:2m78:South Blue:Sky Island
-Senor Pink:Male:Donquixote Pirates:Paramecia:58M:2m44:North Blue:Dressrosa
-Shanks:Male:Red Hair Pirates:None:4B:1m99:West Blue:East Blue
-Shimotsuki Ryuma:Male:Thriller Bark Pirates:None:0:1m79:Grand Line:Thriller Bark
-Shirahoshi:Female:Neptune Family:None:0:11m87:Grand Line:Fish-Man Island
-Silvers Rayleigh:Male:Roger Pirates:None:0:1m88:Unknown:East Blue
-Smoker:Male:Marines:Logia:0:2m09:Grand Line:East Blue
-Tashigi:Female:Marines:None:0:1m70:East Blue:East Blue
-Tony Tony Chopper:Male:Straw Hat Pirates:Zoan:1K:90cm:Grand Line:Arabasta
-Trafalgar D. Water Law:Male:Heart Pirates:Paramecia:3B:1m91:North Blue:Summit War
-Ulti:Female:Beasts Pirates:Zoan:400M:1m73:Grand Line:Wano Country
-Urouge:Male:Fallen Monk Pirates:None:108M:3m88:Sky Island:Summit War
-Usopp:Male:Straw Hat Pirates:None:500M:1m76:East Blue:East Blue
-Vinsmoke Judge:Male:Vinsmoke Family:None:0:2m72:North Blue:Whole Cake Island
-Vinsmoke Reiju:Female:Vinsmoke Family:None:0:1m73:North Blue:Whole Cake Island
-Vinsmoke Sanji:Male:Straw Hat Pirates:None:1B:1m80:North Blue:East Blue
-Viola:Female:Riku Family:Paramecia:0:1m78:Grand Line:Dressrosa
-Wanda:Female:Mokomo Dukedom:None:0:1m81:Grand Line:Whole Cake Island
-Wyper:Male:Shandia:None:0:1m83:Sky Islands:Sky Island
-X. Drake:Male:Marines:Zoan:222M:2m33:North Blue:Summit War
-Yamato:Female:Ninja-Pirate-Mink-Samurai Alliance:Zoan:0:2m63:Unknown:Wano Country
-Zeff:Male:Baratie:None:0:1m89:East Blue:East Blue
+Arlong:Male:Arlong Pirates:None:base64:20M:2m63:Grand Line:Arlong Park
+Ashura Doji:Male:Mt. Atama Thieves:None:Armament,Observation:0:5m44:Grand Line:Wano Country
+Bartholomew Kuma:Male:Revolutionary Army:Paramecia:Armament:296M:6m89:South Blue:Jaya
+Bartolomeo:Male:Barto Club:Paramecia:base64:200M:2m20:East Blue:Dressrosa
+Basil Hawkins:Male:Hawkins Pirates:Paramecia:Armament,Observation:320M:2m10:North Blue:Sabaody Archipelago
+Bellamy:Male:Donquixote Pirates:Paramecia:Armament,Observation:195M:2m40:North Blue:Jaya
+Bellemere:Female:Marines:None:base64:0:1m86:East Blue:Arlong Park
+Benn. Beckman:Male:Red Hair Pirates:None:Armament:0:2m06:North Blue:Romance Dawn
+Bentham:Male:Newkama Land:Paramecia:base64:32M:2m38:East Blue:Little Garden
+Bepo:Male:Heart Pirates:None:base64:500:2m40:Zou:Sabaody Archipelago
+Blueno:Male:CP0:Paramecia:Armament,Observation:0:2m58:North Blue:Water 7
+Boa Hancock:Female:Kuja:Paramecia:Armament,Observation,Conqueror:80M:1m91:Calm Belt:Amazon Lily
+Borsalino:Male:Marines:Logia:Armament,Observation:0:3m02:North Blue:Sabaody Archipelago
+Brogy:Male:Giant Warrior Pirates:None:base64:100M:21m30:Grand Line:Little Garden
+Brook:Male:Straw Hat Pirates:Paramecia:base64:83M:2m77:West Blue:Thriller Bark
+Buggy:Male:Cross Guild:Paramecia:base64:15M:1m92:Grand Line:Orange Town
+Caesar Clown:Male:Germa Kingdom:Logia:base64:300M:3m09:Grand Line:Punk Hazard
+Camie:Female:Takoyaki 8:None:base64:0:1m97:Grand Line:Arabasta
+Capone Bege:Male:Fire Tank Pirates:Paramecia:base64:350M:1m66:West Blue:Sabaody Archipelago
+Caribou:Male:Caribou Pirates:Logia:base64:210M:2m28:North Blue:Return to Sabaody
+Carrot:Female:Mokomo Dukedom:None:base64:0:1m61:Grand Line:Zou
+Cavendish:Male:Beautiful Pirates:None:Armament,Observation:330M:2m08:Grand Line:Dressrosa
+Charlotte Brulee:Female:Big Mom Pirates:Paramecia:base64:0:3m50:Grand Line:Whole Cake Island
+Charlotte Chiffon:Female:Fire Tank Pirates:None:base64:0:2m15:Grand Line:Whole Cake Island
+Charlotte Katakuri:Male:Big Mom Pirates:Paramecia:Armament,Observation,Conqueror:1.1B:5m09:Grand Line:Whole Cake Island
+Charlotte Linlin:Female:Big Mom Pirates:Paramecia:Armament,Observation,Conqueror:4.4B:8m80:Grand Line:Fish-Man Island
+Charlotte Mont d'Or:Male:Big Mom Pirates:Paramecia:base64:120M:2m60:Grand Line:Whole Cake Island
+Charlotte Perospero:Male:Big Mom Pirates:Paramecia:Armament,Observation:700M:3m33:Grand Line:Whole Cake Island
+Charlotte Pudding:Female:Big Mom Pirates:Paramecia:base64:0:1m66:Grand Line:Fish-Man Island
+Crocodile:Male:Cross Guild:Logia:base64:81M:2m53:Grand Line:Little Garden
+Daz Bones:Male:Cross Guild:Paramecia:base64:75M:2m12:West Blue:Arabasta
+Denjiro:Male:Kozuki Family:None:Armament,Observation:0:3m06:Grand Line:Wano Country
+Diamante:Male:Donquixote Pirates:Paramecia:Armament,Observation:99M:5m25:North Blue:Dressrosa
+Don Krieg:Male:Krieg Pirates:None:base64:17M:2m43:East Blue:Baratie
+Donquixote Doflamingo:Male:Donquixote Pirates:Paramecia:Armament,Observation,Conqueror:340M:3m05:Red Line:Jaya
+Donquixote Rosinante:Male:Marines:Paramecia:base64:0:2m93:Red Line:Dressrosa
+Dorry:Male:Giant Warrior Pirates:None:base64:100M:22m60:Grand Line:Little Garden
+Dracule Mihawk:Male:Cross Guild:None:Armament,Observation:0:1m98:Unknown:Baratie
+Edward Newgate:Male:Whitebeard Pirates:Paramecia:Armament,Observation,Conqueror:5B:6m66:Grand Line:Arabasta
+Emporio Ivankov:Male:Revolutionary Army:Paramecia:base64:100M:4m49:Grand Line:Impel Down
+Enel:Male:Automata:Logia:Observation:0:2m66:Sky Islands:Skypiea
+Eustass Kid:Male:Kid Pirates:Paramecia:Armament,Observation,Conqueror:3B:2m05:South Blue:Sabaody Archipelago
+Foxy:Male:Foxy Pirates:Paramecia:base64:24M:1m80:South Blue:Long Ring Long Land
+Franky:Male:Straw Hat Pirates:None:base64:94M:2m40:South Blue:Water 7
+Galdino:Male:Cross Guild:Paramecia:base64:24M:1m79:South Blue:Little Garden
+Gecko Moria:Male:Thriller Bark Pirates:Paramecia:base64:320M:6m92:West Blue:Thriller Bark
+Gin:Male:Krieg Pirates:None:base64:12M:1m86:East Blue:Baratie
+Gol D. Roger:Male:Roger Pirates:None:Armament,Observation,Conqueror:5.6B:2m74:East Blue:Romance Dawn
+Hiriluk:Male:None:None:base64:0:2m13:Grand Line:Drum Island
+Hody Jones:Male:New Fish-Man Pirates:None:base64:0:3m31:Grand Line:Fish-Man Island
+Hogback:Male:Thriller Bark Pirates:None:base64:0:2m23:West Blue:Thriller Bark
+Iceburg:Male:Galley-La Company:None:base64:0:1m99:Grand Line:Water 7
+Inuarashi:Male:Mokomo Dukedom:None:Armament,Observation:0:5m11:Grand Line:Zou
+Issho:Male:Marines:Paramecia:Armament,Observation:0:2m70:Grand Line:Dressrosa
+Jabra:Male:CP9:Zoan:Armament,Observation:0:2m12:North Blue:Enies Lobby
+Jesus Burgess:Male:Blackbeard Pirates:Paramecia:Armament,Observation:20M:3m55:Grand Line:Jaya
+Jewelry. Bonney:Female:Bonney Pirates:Paramecia:Armament:140M:1m74:South Blue:Sabaody Archipelago
+Jinbe:Male:Straw Hat Pirates:None:Armament,Observation:438M:3m01:Grand Line:Impel Down
+Kaido:Male:Beasts Pirates:Zoan:Armament,Observation,Conqueror:4.6B:7m10:Grand Line:Dressrosa
+Kaku:Male:CP0:Zoan:Armament,Observation:0:1m93:East Blue:Water 7
+Kalifa:Female:CP0:Paramecia:Armament,Observation:0:1m85:Grand Line:Water 7
+Kawamatsu:Male:Kozuki Family:None:Armament,Observation:0:2m71:Unknown:Wano Country
+Kaya:Female:None:None:base64:0:1m69:East Blue:Syrup Village
+Kikunojo:Female:Kozuki Family:None:Armament,Observation:0:2m87:Grand Line:Wano Country
+Killer:Male:Kid Pirates:Zoan:Armament,Observation:200M:1m95:South Blue:Sabaody Archipelago
+Kin'emon:Male:Kozuki Family:Paramecia:Armament,Observation:0:2m95:Grand Line:Punk Hazard
+Koala:Female:Revolutionary Army:None:base64:0:1m60:Unknown:Fish-Man Island
+Koby:Male:Marines:None:Armament,Observation:0:1m67:East Blue:Romance Dawn
+Kozuki Hiyori:Female:Kozuki Family:None:base64:0:1m70:Grand Line:Wano Country
+Kozuki Momonosuke:Male:Kozuki Family:Zoan:Observation:0:1m10:Grand Line:Punk Hazard
+Kozuki Oden:Male:Kozuki Family:None:Armament,Observation,Conqueror:0:3m82:Grand Line:Wano Country
+Kureha:Female:Sakura Kingdom:None:base64:0:1m88:Grand Line:Drum Island
+Kuro:Male:Black Cat Pirates:None:base64:16M:2m07:East Blue:Syrup Village
+Kurozumi Kanjuro:Male:Kurozumi Family:Paramecia:Armament,Observation:0:3m47:Unknown:Dressrosa
+Kurozumi Tama:Female:Kurozumi Family:Paramecia:base64:0:1m08:Grand Line:Wano Country
+Kyros:Male:Riku Family:None:base64:0:2m98:Grand Line:Dressrosa
+Magellan:Male:Impel Down:Paramecia:base64:0:4m91:Grand Line:Impel Down
+Marco:Male:Whitebeard Pirates:Zoan:Armament,Observation:1.4B:2m03:Grand Line:Jaya
+Marshall D. Teach:Male:Blackbeard Pirates:Logia:Armament,Observation:2.2B:3m44:Grand Line:Jaya
+Monet:Female:Donquixote Pirates:Logia:base64:0:2m27:North Blue:Punk Hazard
+Monkey D. Dragon:Male:Revolutionary Army:None:base64:0:2m56:East Blue:Loguetown
+Monkey D. Garp:Male:Marines:None:Armament,Observation,Conqueror:0:2m87:East Blue:Arlong Park
+Monkey D. Luffy:Male:Straw Hat Pirates:Paramecia:Armament,Observation,Conqueror:3B:1m74:East Blue:Romance Dawn
+Mont Blanc Cricket:Male:Saruyama Alliance:None:base64:25M:2m42:North Blue:Jaya
+Mont Blanc Noland:Male:Lvneel:None:base64:0:2m20:North Blue:Skypiea
+Morgans:Male:World Economy News Paper:Zoan:base64:0:3m05:Grand Line:Whole Cake Island
+Nami:Female:Straw Hat Pirates:None:base64:66M:1m70:East Blue:Orange Town
+Nefertari Vivi:Female:Arabasta Kingdom:None:base64:0:1m69:Grand Line:Reverse Mountain
+Nekomamushi:Male:Mokomo Dukedom:None:Armament,Observation:0:5m22:Grand Line:Zou
+Nico Robin:Female:Straw Hat Pirates:Paramecia:base64:130M:1m88:West Blue:Whisky Peak
+Nojiko:Female:None:None:base64:0:1m70:East Blue:Arlong Park
+Oars:Male:Thriller Bark Pirates:None:base64:0:67m:North Blue:Thriller Bark
+Paulie:Male:Galley-La Company:None:base64:0:1m95:Grand Line:Water 7
+Pedro:Male:Mokomo Dukedom:None:Armament,Observation:382M:2m33:Grand Line:Zou
+Pekoms:Male:Big Mom Pirates:Zoan:Armament,Observation:330M:2m32:Zou:Fish-Man Island
+Pell:Male:Arabasta Kingdom:Zoan:base64:0:1m89:Grand Line:Arabasta
+Perona:Female:Dracule Mihawk:Paramecia:base64:0:1m60:West Blue:Thriller Bark
+Pica:Male:Donquixote Pirates:Paramecia:Armament,Observation:99M:4m70:North Blue:Dressrosa
+Portgas D. Ace:Male:Whitebeard Pirates:Logia:Armament,Observation,Conqueror:550M:1m85:South Blue:Drum Island
+Raizo:Male:Kozuki Family:Paramecia:Armament,Observation:0:3m11:Grand Line:Zou
+Rebecca:Female:Dressrosa:None:Observation:0:1m71:Grand Line:Dressrosa
+Rob Lucci:Male:CP0:Zoan:Armament,Observation:0:2m12:Grand Line:Water 7
+Roronoa Zoro:Male:Straw Hat Pirates:None:Armament,Observation,Conqueror:320M:1m81:East Blue:Romance Dawn
+Sabo:Male:Revolutionary Army:Logia:Armament,Observation:602M:1m87:East Blue:Post-War
+Sakazuki:Male:Marines:Logia:Armament,Observation:0:3m06:North Blue:Enies Lobby
+Sengoku:Male:Marines:Zoan:Armament,Observation,Conqueror:0:2m78:South Blue:Jaya
+Senor Pink:Male:Donquixote Pirates:Paramecia:base64:58M:2m44:North Blue:Dressrosa
+Shanks:Male:Red Hair Pirates:None:Armament,Observation,Conqueror:4B:1m99:West Blue:Romance Dawn
+Shimotsuki Ryuma:Male:Thriller Bark Pirates:None:Armament:0:1m79:Grand Line:Thriller Bark
+Shirahoshi:Female:Neptune Family:None:Observation:0:11m87:Grand Line:Fish-Man Island
+Silvers Rayleigh:Male:Roger Pirates:None:Armament,Observation,Conqueror:0:1m88:Unknown:Orange Town
+Smoker:Male:Marines:Logia:Armament,Observation:0:2m09:Grand Line:Loguetown
+Spandam:Male:CP0:None:base64:0:1m92:Grand Line:Water 7
+Tashigi:Female:Marines:None:Armament,Observation:0:1m70:East Blue:Loguetown
+Tony Tony Chopper:Male:Straw Hat Pirates:Zoan:base64:100:90cm:Grand Line:Drum Island
+Trafalgar D. Water Law:Male:Heart Pirates:Paramecia:Armament,Observation:3B:1m91:North Blue:Sabaody Archipelago
+Ulti:Female:Beasts Pirates:Zoan:Armament,Observation:400M:1m73:Grand Line:Wano Country
+Urouge:Male:Fallen Monk Pirates:Paramecia:base64:108M:3m88:Sky Islands:Sabaody Archipelago
+Usopp:Male:Straw Hat Pirates:None:Observation:200M:1m76:East Blue:Syrup Village
+Vinsmoke Judge:Male:Vinsmoke Family:None:Armament:0:2m72:North Blue:Whole Cake Island
+Vinsmoke Reiju:Female:Vinsmoke Family:None:base64:0:1m73:North Blue:Whole Cake Island
+Vinsmoke Sanji:Male:Straw Hat Pirates:None:Armament,Observation:330M:1m80:North Blue:Baratie
+Viola:Female:Riku Family:Paramecia:base64:0:1m78:Grand Line:Dressrosa
+Wanda:Female:Mokomo Dukedom:None:base64:0:1m81:Grand Line:Zou
+Wyper:Male:Shandia:None:base64:0:1m83:Sky Islands:Skypiea
+X. Drake:Male:Marines:Zoan:Armament,Observation:222M:2m33:North Blue:Sabaody Archipelago
+Yamato:Female:Ninja-Pirate-Mink-Samurai Alliance:Zoan:Armament,Observation,Conqueror:0:2m63:Unknown:Wano Country
+Zeff:Male:Baratie:None:base64:0:1m89:East Blue:Baratie

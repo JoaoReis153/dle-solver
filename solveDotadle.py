@@ -6,8 +6,8 @@ import re
 class Champion:
     def __init__(self, fromString):
        self.attributes = fromString.split(":")
+       print(self.attributes)
        self.attributes = [attr.split(",") for attr in self.attributes]
-       
        c = 0
        for a in self.attributes:
            for b in a:
@@ -27,7 +27,6 @@ class Answer:
         self.possibleChampions.sort(key=lambda x: x.count, reverse = True)
 
     def getAttributesLength(self):
-        print(self.possibleChampions[0].attributes)
         return len(self.possibleChampions[0].attributes)
 
     def getChampByName(self, name):
@@ -108,8 +107,9 @@ class Answer:
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1:
 
-                possibleChampionInt = "".join(re.findall(r'\d+\.\d+|\d+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'\d+\.\d+|\d+', champion.attributes[index]))
+                possibleChampionInt = "".join(re.findall(r'[0-9.]+', possibleChampion.attributes[index]))
+                givenChampionInt = "".join(re.findall(r'[0-9.]+', champion.attributes[index]))
+
                 if(float(possibleChampionInt) < float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
 
@@ -121,8 +121,9 @@ class Answer:
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
-                possibleChampionInt = "".join(re.findall(r'\d+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'\d+', champion.attributes[index]))
+                possibleChampionInt = "".join(re.findall(r'[0-9.]+', possibleChampion.attributes[index]))
+                givenChampionInt = "".join(re.findall(r'[0-9.]+', champion.attributes[index]))
+
                 if(float(possibleChampionInt) > float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
 
@@ -143,7 +144,8 @@ class Answer:
 
         for i in range(0, len(combination)):
             k = i+1
-            
+            print(k)
+
             if(combination[i] == "g"):
                 self.gotGreen(champion, k)
             if(combination[i] == "b"):
@@ -167,7 +169,6 @@ class Answer:
         return f"{re}\n--------------------------------"
 
 
-def runLoldle(driver):
-    print("Running Loldle...")
-    url = "https://loldle.net/classic"
-    getSolution(driver, url, Champion, Answer)
+def runDotadle(driver):
+  url = "https://dotadle.net/classic"
+  getSolution(driver, url, Champion, Answer)

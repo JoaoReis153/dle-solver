@@ -40,31 +40,39 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = "", showPrints = Tru
 
     try:
         # Wait for up to 10 seconds for the button to be clickable
-        button = WebDriverWait(driver, 2).until(
+        button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.CLASS_NAME, "fc-button-label"))
         )
         button.click()
     except Exception as e:
         print(f"Error: {e}")
-    #firstGuess = champions[random.randint(0, len(champions) - 1)]
-    #most optimal: Varus
-    if FIRSTGUESS != "":
-        firstGuess = answer.getChampByName(FIRSTGUESS)
-    else:
-        firstGuess = answer.possibleChampions[0]
+    
+    try:
+        pop_up_button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CLASS_NAME, "modal-button")))
+        pop_up_button.click()
+    except TimeoutException:
+        print('No one piece "are you up to date" pop-up found.')
+
+    firstGuess = answer.possibleChampions[0]
 
     input_element = wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='IZ-select__input-wrap']//input")))
     input_element.clear()
 
+
     sendGuess(showPrints, driver, input_element, firstGuess.attributes[0], answer)
+    
+
 
     guess, colors = processGuess(showPrints, answer, driver)
-
-    while(len(colors) != attrsLen - 1):
+    print("Len colors: " + str(len(colors)))
+    print("AttrsLen - 1:" + str(attrsLen - 1))
+    while(len(colors) != attrsLen - 1):        
         guess, colors = processGuess(showPrints, answer, driver)
+        
+    
 
     while not colorsAllGreen(colors) :
-        print("gugugu")
+
         answer.addTry(guess, colors)
 
         print(answer)
@@ -75,16 +83,11 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = "", showPrints = Tru
         guess = answer.possibleChampions[0].attributes[0]
         sendGuess(showPrints, driver, input_element, guess, answer)
         guess, colors = processGuess(showPrints, answer, driver)
+        
 
     if colorsAllGreen(colors):
         Print(showPrints, ".")
         Print(showPrints, "You won")
         Print(showPrints, ".")
-
-
-    time.sleep(30)
-
-#    quit()
-
-
+    
 

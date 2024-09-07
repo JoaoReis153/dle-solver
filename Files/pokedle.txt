@@ -14,8 +14,8 @@ Chansey:Normal:None:Urban:Pink:1:1m10:34.6kg
 Charizard:Fire:Flying:Mountain:Orange:3:1m70:90.5kg
 Charmander:Fire:None:Mountain:Orange:1:60cm:8.5kg
 Charmeleon:Fire:None:Mountain:Red:2:1m10:19kg
-Clefable:Fairy:None:Mountain:Pink:2:1m30:40kg
-Clefairy:Fairy:None:Mountain:Pink:1:60cm:7.5kg
+Clefable:Normal:None:Mountain:Pink:2:1m30:40kg
+Clefairy:Normal:None:Mountain:Pink:1:60cm:7.5kg
 Cloyster:Water:Ice:Sea:Purple:2:1m50:132.5kg
 Cubone:Ground:None:Mountain:Brown:1:40cm:6.5kg
 Dewgong:Water:Ice:Sea:White:2:1m70:120kg
@@ -55,7 +55,7 @@ Hitmonlee:Fighting:None:Urban:Brown:1:1m50:49.8kg
 Horsea:Water:None:Sea:Blue:1:40cm:8kg
 Hypno:Psychic:None:Grassland:Yellow:2:1m60:75.6kg
 Ivysaur:Grass:Poison:Grassland:Green:2:1m:13kg
-Jigglypuff:Normal:Fairy:Grassland:Pink:1:50cm:5.5kg
+Jigglypuff:Normal:None:Grassland:Pink:1:50cm:5.5kg
 Jolteon:Electric:None:Urban:Yellow:2:80cm:24.5kg
 Jynx:Ice:Psychic:Urban:Purple, Red:1:1m40:40.6kg
 Kabuto:Rock:Water:Sea:Black, Brown:1:50cm:11.5kg
@@ -71,10 +71,10 @@ Lickitung:Normal:None:Grassland:Pink:1:1m20:65.5kg
 Machamp:Fighting:None:Mountain:Gray:3:1m60:130kg
 Machoke:Fighting:None:Mountain:Purple:2:1m50:70.5kg
 Machop:Fighting:None:Mountain:Gray:1:80cm:19.5kg
-Magikarp:Water:None:Waters-edge:Red:1:90cm:10kg
+Magikarp:Water:None:Waters-edge:Orange, Red:1:90cm:10kg
 Magmar:Fire:None:Mountain:Red, Yellow:1:1m30:44.5kg
-Magnemite:Electric:Steel:Rough-terrain:Gray:1:30cm:6kg
-Magneton:Electric:Steel:Rough-terrain:Gray:2:1m:60kg
+Magnemite:Electric:None:Rough-terrain:Gray:1:30cm:6kg
+Magneton:Electric:None:Rough-terrain:Gray:2:1m:60kg
 Mankey:Fighting:None:Mountain:Brown, White:1:50cm:28kg
 Marowak:Ground:None:Mountain:Brown:2:1m:45kg
 Meowth:Normal:None:Urban:Yellow:1:40cm:4.2kg
@@ -82,7 +82,7 @@ Metapod:Bug:None:Forest:Green:2:70cm:9.9kg
 Mew:Psychic:None:Rare:Pink:1:40cm:4kg
 Mewtwo:Psychic:None:Rare:Gray, Purple:1:2m:122kg
 Moltres:Fire:Flying:Rare:Yellow:1:2m:60kg
-Mr. Mime:Psychic:Fairy:Urban:Pink, White:1:1m30:54.5kg
+Mr. Mime:Psychic:None:Urban:Pink, White:1:1m30:54.5kg
 Muk:Poison:None:Urban:Purple:2:1m20:30kg
 Nidoking:Poison:Ground:Grassland:Purple:3:1m40:62kg
 Nidoqueen:Poison:Ground:Grassland:Blue:3:1m30:60kg
@@ -110,7 +110,7 @@ Ponyta:Fire:None:Grassland:Orange, Yellow:1:1m:30kg
 Porygon:Normal:None:Urban:Blue, Pink:1:80cm:36.5kg
 Primeape:Fighting:None:Mountain:Brown, White:2:1m:32kg
 Psyduck:Water:None:Waters-edge:Yellow:1:80cm:19.6kg
-Raichu:Electric:None:Forest:Yellow:2:80cm:30kg
+Raichu:Electric:None:Forest:Orange:2:80cm:30kg
 Rapidash:Fire:None:Grassland:Orange, Yellow:2:1m70:95kg
 Raticate:Normal:None:Grassland:Brown:2:70cm:18.5kg
 Rattata:Normal:None:Grassland:Purple:1:30cm:3.5kg
@@ -146,6 +146,6 @@ Wartortle:Water:None:Waters-edge:Blue:2:1m:22.5kg
 Weedle:Bug:Poison:Forest:Brown:1:30cm:3.2kg
 Weepinbell:Grass:Poison:Forest:Green, Yellow:2:1m:6.4kg
 Weezing:Poison:None:Urban:Purple:2:1m20:9.5kg
-Wigglytuff:Normal:Fairy:Grassland:Pink:2:1m:12kg
+Wigglytuff:Normal:None:Grassland:Pink:2:1m:12kg
 Zapdos:Electric:Flying:Rare:Yellow:1:1m60:52.6kg
 Zubat:Poison:Flying:Cave:Blue, Purple:1:80cm:7.5kg

@@ -38,7 +38,7 @@ Lucas:Male:Human:EarthBound:94:SSB Brawl:GBA:2006
 Lucina:Female:Augmented, Human:Fire Emblem:90:SSB 3DS/Wii U:3DS:2012
 Luigi:Male:Human:Mario:97:SSB 64:Arcade:1983
 Mario:Male:Human:Mario:98:SSB 64:Arcade:1981
-Marth:Male:Human:Fire Emblem:90:SSB Melee:Famicom:1990
+Marth:Male:Human:Fire Emblem:90:SSB Melee:NES:1990
 Mega Man:Male:Robot:Mega Man:102:SSB 3DS/Wii U:NES:1987
 Meta Knight:Male:Unknown:Kirby:80:SSB Brawl:NES:1993
 Mewtwo:Other:Pokémon:Pokémon:79:SSB Melee:Game Boy:1996
@@ -68,7 +68,7 @@ Ryu:Male:Human:Street Fighter:103:SSB 3DS/Wii U:Arcade:1987
 Samus:Female:Augmented, Human:Metroid:108:SSB 64:NES:1986
 Sephiroth:Male:Human, Jenova:Final Fantasy:79:SSB Ultimate:PlayStation:1997
 Sheik:Female:Human:The Legend of Zelda:78:SSB Melee:Nintendo 64:1998
-Shulk:Male:Homs:Xenoblade:97:SSB 3DS/Wii U:Wii:2010
+Shulk:Male:Human:Xenoblade:97:SSB 3DS/Wii U:Wii:2010
 Simon:Male:Human:Castlevania:107:SSB Ultimate:NES:1986
 Snake:Male:Augmented, Human:Metal Gear Solid:106:SSB Brawl:MSX2:1987
 Sonic:Male:Hedgehog:Sonic the Hedgehog:86:SSB Brawl:Sega Genesis:1990
@@ -80,7 +80,7 @@ Villager:Selectable:Human:Animal Crossing:92:SSB 3DS/Wii U:Nintendo 64:2001
 Wario:Male:Human:Mario:107:SSB Brawl:Game Boy:1992
 Wii Fit Trainer:Selectable:Human:Wii Fit:96:SSB 3DS/Wii U:Wii:2007
 Wolf:Male:Wolf:Star Fox:92:SSB Brawl:Nintendo 64:1997
-Yoshi:Male:Yoshi:Mario:104:SSB 64:SNES:1990
+Yoshi:Male:Yoshi:Yoshi:104:SSB 64:SNES:1990
 Young Link:Male:Human:The Legend of Zelda:88:SSB Melee:Nintendo 64:1998
 Zelda:Female:Human:The Legend of Zelda:85:SSB Melee:NES:1986
 Zero Suit Samus:Female:Augmented, Human:Metroid:80:SSB Brawl:GBA:1986
