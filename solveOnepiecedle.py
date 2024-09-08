@@ -1,5 +1,5 @@
 from getSolution import getSolution
-
+import math
 import re
 
 
@@ -159,7 +159,6 @@ class Answer:
 
         for i in range(0, len(combination)):
             k = i+1
-            print(k)
 
             if(combination[i] == "g"):
                 self.gotGreen(champion, k)
@@ -193,22 +192,57 @@ def runOnepiecedle(driver):
 def convert_to_base_unit(input_str):
 
     numbers = re.findall(r'[0-9.]+', input_str)
-    if not numbers or "base64" in input_str:
-        return None
+    try:
+        index = islandsOrder.index(input_str)
+        return index
+    except ValueError:
+        if "base64" in input_str:
+            return None
         #return input_str
 
-    input_str = input_str.strip().lower() 
+        input_str = input_str.strip().lower() 
+        content = int("".join(numbers))
 
-    if 'cm' in input_str or 'm' in input_str or 'M' in input_str:
-        return "".join(numbers) 
+        if 'cm' in input_str or 'm' in input_str or 'M' in input_str:
+            return str(int(content * math.pow(10,6)))
 
-    if "B" in input_str or 'b' in input_str:
-        value = float(input_str.replace('b', '').replace('B', '').strip())
-        return str(int(value * 1000))
-    
-    return input_str
+        if "B" in input_str or 'b' in input_str:
+            return str(int(content * math.pow(10,9)))
+
+        if any(not char.isdigit() for char in input_str):
+            return None
+
+        return input_str
 
 
 
-
-print(2 not in [1, [2, 4], 3])
+islandsOrder = [
+  'Romance Dawn',
+  'Orange Town',
+  'Syrup Village',
+  'Baratie',
+  'Arlong Park',
+  'Loguetown',
+  'Reverse Mountain',
+  'Whisky Peak',
+  'Little Garden',
+  'Drum Island',
+  'Arabasta',
+  'Jaya',
+  'Skypiea',
+  'Long Ring Long Land',
+  'Water 7',
+  'Enies Lobby',
+  'Post-War',
+  'Thriller Bark',
+  'Sabaody Archipelago',
+  'Amazon Lily',
+  'Impel Down',
+  'Return to Sabaody',
+  'Fish-Man Island',
+  'Punk Hazard',
+  'Dressrosa',
+  'Zou',
+  'Whole Cake Island',
+  'Wano Country'
+]

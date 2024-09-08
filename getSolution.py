@@ -11,11 +11,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
 
-from utils import getFileFromLink, getLastChampGiven, processGuess, sendGuess, Print, colorsAllGreen
+from utils import getFileFromLink, getLastChampGiven, processGuess, sendGuess, colorsAllGreen
 #from objects import Champion, Answer
 
 
-def getSolution(driver, url, Champion, Answer, FIRSTGUESS = "", showPrints = True):
+def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
 
     file = getFileFromLink(url)
     # Your URL
@@ -59,15 +59,13 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = "", showPrints = Tru
     input_element.clear()
 
 
-    sendGuess(showPrints, driver, input_element, firstGuess.attributes[0], answer)
+    sendGuess(driver, input_element, firstGuess.attributes[0], answer)
     
 
 
-    guess, colors = processGuess(showPrints, answer, driver)
-    print("Len colors: " + str(len(colors)))
-    print("AttrsLen - 1:" + str(attrsLen - 1))
+    guess, colors = processGuess(answer, driver)
     while(len(colors) != attrsLen - 1):        
-        guess, colors = processGuess(showPrints, answer, driver)
+        guess, colors = processGuess(answer, driver)
         
     
 
@@ -75,19 +73,18 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = "", showPrints = Tru
 
         answer.addTry(guess, colors)
 
-        print(answer)
         if(len(answer.possibleChampions) == 0 or colors == "ggggggg"):
-            Print(showPrints, "Answer not found")
+            print("Answer not found")
             break
 
         guess = answer.possibleChampions[0].attributes[0]
-        sendGuess(showPrints, driver, input_element, guess, answer)
-        guess, colors = processGuess(showPrints, answer, driver)
+        sendGuess(driver, input_element, guess, answer)
+        guess, colors = processGuess(answer, driver)
         
 
     if colorsAllGreen(colors):
-        Print(showPrints, ".")
-        Print(showPrints, "You won")
-        Print(showPrints, ".")
+        print()
+        print("You won")
+        print("")
     
 

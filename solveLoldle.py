@@ -27,7 +27,6 @@ class Answer:
         self.possibleChampions.sort(key=lambda x: x.count, reverse = True)
 
     def getAttributesLength(self):
-        print(self.possibleChampions[0].attributes)
         return len(self.possibleChampions[0].attributes)
 
     def getChampByName(self, name):

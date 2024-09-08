@@ -6,7 +6,6 @@ import re
 class Champion:
     def __init__(self, fromString):
        self.attributes = fromString.split(":")
-       print(self.attributes)
        self.attributes = [attr.split(",") for attr in self.attributes]
        c = 0
        for a in self.attributes:

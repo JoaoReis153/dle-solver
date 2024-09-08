@@ -8,7 +8,6 @@ import os
 
 
 def getFileFromLink(url):
-# Print the current working directory
 
     # Get the directory of the current file
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -27,13 +26,8 @@ def getFileNameFromLink(url):
     return fileName
 
 
-
-def Print(showPrints, phrase):
-    if showPrints:
-        print(phrase)
-
-def sendGuess(showPrints, driver, input_element, guess, answer):
-    Print(showPrints, "#Guess: " + guess + "\n")
+def sendGuess(driver, input_element, guess, answer):
+    print("#Guess: " + guess + "\n")
     time.sleep(0.1)
     input_element.clear()
     input_element.send_keys(guess)
@@ -64,14 +58,13 @@ def colorsAllGreen(colors):
             return False
     return True
 
-def processGuess(showPrints, answer, driver):
+def processGuess(answer, driver):
 
     guess, lastElement = getLastChampGiven(answer, driver)
 
     # Find all 'div' elements inside the 'square-container'
     attributesDivs = lastElement.find_element(By.CLASS_NAME, "square-container").find_elements(By.TAG_NAME, "div")
 
-    # Loop through the found 'div' elements and print their class names
     info = ""
     for div in attributesDivs:
         info += div.get_attribute("class") + "\n"
@@ -86,7 +79,6 @@ def processGuess(showPrints, answer, driver):
         # Find all 'div' elements inside the 'square-container'
         attributesDivs = lastElement.find_element(By.CLASS_NAME, "square-container").find_elements(By.TAG_NAME, "div")
 
-        # Loop through the found 'div' elements and print their class names
         info = ""
         for div in attributesDivs:
             info += div.get_attribute("class") + "\n"
@@ -108,7 +100,7 @@ def processGuess(showPrints, answer, driver):
 
     colors = colors.replace("a", "")
 
-    Print(showPrints, "Colors: " + str(colors))
+    print("Colors: " + str(colors))
 
     return guess, colors
 

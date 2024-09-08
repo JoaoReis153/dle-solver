@@ -143,7 +143,7 @@ class Answer:
 
         for i in range(0, len(combination)):
             k = i+1
-            print(k)
+        
 
             if(combination[i] == "g"):
                 self.gotGreen(champion, k)

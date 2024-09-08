@@ -147,7 +147,6 @@ def fetchAllNames(driver, wait, spamLettersRate = 0.1):
 
 
             if(len(champion.text) != 0): 
-                print(champion.text)
 
                 if(champion.text[0] == letter.upper()): 
                     print(GREEN + champion.text + GREEN)

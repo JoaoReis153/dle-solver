@@ -103,7 +103,7 @@ class Answer:
 
 
 
-        print("a:  " + champion)
+
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1:
