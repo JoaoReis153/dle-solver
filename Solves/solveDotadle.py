@@ -3,10 +3,11 @@ from getSolution import getSolution
 import re
 
 
+
 class Champion:
     def __init__(self, fromString):
        self.attributes = fromString.split(":")
-       self.attributes = [attr.split(",") for attr in self.attributes]
+       self.attributes = [attr.split(",") if attr is not None else "" for attr in self.attributes]
        c = 0
        for a in self.attributes:
            for b in a:
@@ -168,6 +169,6 @@ class Answer:
         return f"{re}\n--------------------------------"
 
 
-def runSmashdle(driver):
-  url = "https://smashdle.net/classic"
+def runDotadle(driver):
+  url = "https://dotadle.net/classic"
   getSolution(driver, url, Champion, Answer)

@@ -9,11 +9,10 @@ from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import TimeoutException, StaleElementReferenceException, ElementNotInteractableException
 from selenium.webdriver.common.action_chains import ActionChains
 import string
-import pyautogui
 
 import os, types
 
-from utils import getFileFromLink, getFileNameFromLink
+from utils import getFileFromLink
 
 start_time = time.time()
 
@@ -21,7 +20,7 @@ showProcess = False
 
 RED = '\033[31m'
 GREEN = '\033[32m'
-RESET = '\033[0m'  
+RESET = '\033[0m'
 
 waitTimeToLookForInputBox = 5  # seconds to wait for input box to appear
 
@@ -47,7 +46,7 @@ def loadDatabase(site):
     removePopUp(driver, wait)
 
     namesData = fetchAllNames(driver, wait)
-    
+
     print("Waiting for data...")
 
     driver = spamNames(driver, namesData, site, wait)
@@ -68,12 +67,12 @@ def fetchInfo(driver, wait, file):
         attributes_squares = championInfo.find_elements(By.CSS_SELECTOR, ".square")
 
         nameElement = championInfo.find_element(By.CSS_SELECTOR, ".square-container .square .champion-icon-name")
-        
+
         info = nameElement.get_attribute("textContent").strip() + ":"
 
         for square in attributes_squares:
             # Extract text from each 'square' which might contain the attribute information
-        
+
 
             square_text = square.text.strip()
 
@@ -91,24 +90,24 @@ def fetchInfo(driver, wait, file):
                             image_src = image.get_attribute("src")
                             if keyword in image_src:
                                 owns.append(keyword)
-                    
+
 
                     info += ",".join(owns) + ":"
-                        
+
 
                 except:
                     pass
 
-        
+
         info = info.split(":")
         if len(info) > 9:
             del info[1]
         info = ":".join(info)
-            
 
-        
+
+
         infos.append(info[:-1].replace("\n", " "))
-        
+
     infos.sort()
 
     print("Writing in the file...")
@@ -137,7 +136,7 @@ def fetchAllNames(driver, wait, spamLettersRate = 0.1):
         input_element = wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='IZ-select__input-wrap']//input")))
         input_element.clear()
         input_element.send_keys(letter)
-        
+
         time.sleep(spamLettersRate)
         champions = driver.find_elements(By.CLASS_NAME, 'IZ-select__item')
 
@@ -146,22 +145,22 @@ def fetchAllNames(driver, wait, spamLettersRate = 0.1):
             driver.execute_script("arguments[0].scrollIntoView(true);", champion)
 
 
-            if(len(champion.text) != 0): 
+            if(len(champion.text) != 0):
 
-                if(champion.text[0] == letter.upper()): 
+                if(champion.text[0] == letter.upper()):
                     print(GREEN + champion.text + GREEN)
                     champion_name = champion.text.strip()
-                      
+
 
                     champion_name = champion_name.split(":")[0] if ":" in champion_name else champion_name
 
                     if champion_name not in data and champion_name != '':
                         data.append(champion_name.strip())
 
-                else: 
-                    print(RED + champion.text + RED) 
+                else:
+                    print(RED + champion.text + RED)
 
-          
+
         print("\n")
 
 
@@ -191,52 +190,52 @@ def spamNames(driver, data,  site, wait, answer = "", spamNamesRate = 0):
     winnerName = ""
     newData = data.copy()
     while not finished:
-        try:  
+        try:
             print("Try")
             waitList = len(data)
             for name in newData:
-                if finished: 
+                if finished:
                     break
-                
+
                 input_element = wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='IZ-select__input-wrap']//input")))
                 input_element.send_keys(name)
 
                 send_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "guess-button")))
-                        
-                wait.until(EC.invisibility_of_element((By.CLASS_NAME, "tooltip-inner")))  
-            
+
+                wait.until(EC.invisibility_of_element((By.CLASS_NAME, "tooltip-inner")))
+
                 send_button.click()
 
                 time.sleep(spamNamesRate)
 
 
             finished = True
-            print("Finished 1")    
-            
+            print("Finished 1")
+
 
         except (TimeoutException, StaleElementReferenceException, ElementNotInteractableException):
             print("Exception")
 
-            if waitList == 0: 
+            if waitList == 0:
                 finished = True
-            
+
             else:
                 winner = driver.find_elements(By.CLASS_NAME, "gg-name")
-                if winner: 
-                    winnerName = winner[0].text     
+                if winner:
+                    winnerName = winner[0].text
                     print("Winner: " + winnerName)
 
-                    time.sleep(1)   
+                    time.sleep(1)
 
-                    newData.remove(winnerName)                
+                    newData.remove(winnerName)
                     newData.append(winnerName)
 
                 options, driver, wait = resetDriver(driver, wait, site)
-        
-    return driver
-    
 
- 
+    return driver
+
+
+
 
 def removePopUp(driver, wait):
     try:

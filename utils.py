@@ -13,7 +13,7 @@ def getFileFromLink(url):
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
     fileName = getFileNameFromLink(url)
-        
+
     return Path(current_dir + "/Files/" + fileName)
 
 def getFileNameFromLink(url):
@@ -27,14 +27,14 @@ def getFileNameFromLink(url):
 
 
 def sendGuess(driver, input_element, guess, answer):
-    print("#Guess: " + guess + "\n")
+    print("#Guess: " + guess)
     time.sleep(0.1)
     input_element.clear()
     input_element.send_keys(guess)
     time.sleep(1)
     wait = WebDriverWait(driver, 10)
     send_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "guess-button")))
-    #wait.until(EC.invisibility_of_element((By.CLASS_NAME, "tooltip-inner"))) 
+    #wait.until(EC.invisibility_of_element((By.CLASS_NAME, "tooltip-inner")))
     send_button.click()
     time.sleep(1)
 
@@ -100,7 +100,7 @@ def processGuess(answer, driver):
 
     colors = colors.replace("a", "")
 
-    print("Colors: " + str(colors))
+    print_colored_squares(colors)
 
     return guess, colors
 
@@ -110,3 +110,25 @@ def find_first_zero(arr):
             return index
     return -1
 
+
+# Define ANSI escape codes for colors
+RED = "\033[41m  \033[0m"    # Red square
+YELLOW = "\033[43m  \033[0m" # Yellow square
+GREEN = "\033[42m  \033[0m"  # Green square
+
+def print_colored_squares(sequence):
+    print("(", end = "")
+    for char in sequence:
+        if char == 'b':
+            print(RED, end='')      # Print red square for 'b'
+        elif char == 'p':
+            print(YELLOW, end='')   # Print yellow square for 'p'
+        elif char == 'g':
+            print(GREEN, end='')     # Print green square for 'g'
+        elif char == 's':
+            print("↑", end='')       # Print up arrow for 's'
+        elif char == 'i':
+            print("↓", end='')       # Print down arrow for 'i'
+        else:
+            print("  ", end='')      # Print space for any other character
+    print(")")  # New line after printing all squares

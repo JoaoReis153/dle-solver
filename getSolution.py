@@ -9,7 +9,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
 from utils import getFileFromLink, getLastChampGiven, processGuess, sendGuess, colorsAllGreen
 #from objects import Champion, Answer
@@ -30,7 +30,7 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
         champions.append(Champion(line.replace(", ", ",")))
 
     answer = Answer(champions)
-    
+
     attrsLen = answer.getAttributesLength()
 
     driver.get(url)
@@ -46,12 +46,12 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
         button.click()
     except Exception as e:
         print(f"Error: {e}")
-    
+
     try:
-        pop_up_button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CLASS_NAME, "modal-button")))
+        pop_up_button = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.CLASS_NAME, "modal-button")))
         pop_up_button.click()
     except TimeoutException:
-        print('No one piece "are you up to date" pop-up found.')
+        pass
 
     firstGuess = answer.possibleChampions[0]
 
@@ -60,14 +60,14 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
 
 
     sendGuess(driver, input_element, firstGuess.attributes[0], answer)
-    
+
 
 
     guess, colors = processGuess(answer, driver)
-    while(len(colors) != attrsLen - 1):        
+    while(len(colors) != attrsLen - 1):
         guess, colors = processGuess(answer, driver)
-        
-    
+
+
 
     while not colorsAllGreen(colors) :
 
@@ -78,13 +78,17 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
             break
 
         guess = answer.possibleChampions[0].attributes[0]
+        print("\n")
         sendGuess(driver, input_element, guess, answer)
         guess, colors = processGuess(answer, driver)
-        
+
+
 
     if colorsAllGreen(colors):
         print()
         print("You won")
         print("")
-    
+
+
+
 

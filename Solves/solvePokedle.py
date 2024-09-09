@@ -3,10 +3,11 @@ from getSolution import getSolution
 import re
 
 
+
 class Champion:
     def __init__(self, fromString):
        self.attributes = fromString.split(":")
-       self.attributes = [attr.split(",") for attr in self.attributes]
+       self.attributes = [attr.split(",") if attr is not None else "" for attr in self.attributes]
        c = 0
        for a in self.attributes:
            for b in a:
@@ -143,7 +144,7 @@ class Answer:
 
         for i in range(0, len(combination)):
             k = i+1
-        
+
 
             if(combination[i] == "g"):
                 self.gotGreen(champion, k)
