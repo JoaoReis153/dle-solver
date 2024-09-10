@@ -4,16 +4,16 @@ from .BaseClasses import BaseAnswer, Champion
 import re
 
 
-
-class Loldle(BaseAnswer):
+class Pokedle(BaseAnswer):
 
     def gotInferiorDate(self, champion, index):
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1:
 
-                possibleChampionInt = "".join(re.findall(r'\d+\.\d+|\d+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'\d+\.\d+|\d+', champion.attributes[index]))
+                possibleChampionInt = "".join(re.findall(r'[0-9.]+', possibleChampion.attributes[index]))
+                givenChampionInt = "".join(re.findall(r'[0-9.]+', champion.attributes[index]))
+
                 if(float(possibleChampionInt) < float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
 
@@ -25,15 +25,16 @@ class Loldle(BaseAnswer):
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
-                possibleChampionInt = "".join(re.findall(r'\d+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'\d+', champion.attributes[index]))
+                possibleChampionInt = "".join(re.findall(r'[0-9.]+', possibleChampion.attributes[index]))
+                givenChampionInt = "".join(re.findall(r'[0-9.]+', champion.attributes[index]))
+
                 if(float(possibleChampionInt) > float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
 
         self.possibleChampions = newPossibleChampions
 
 
-def runCopyLoldle(driver):
-    print("Running Loldle...")
-    url = "https://loldle.net/classic"
-    getSolution(driver, url, Champion, Loldle)
+
+def runPokedle(driver):
+  url = "https://pokedle.net/classic"
+  getSolution(driver, url, Champion, Pokedle)

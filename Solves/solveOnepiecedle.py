@@ -41,7 +41,7 @@ class OnePiecedle(BaseAnswer):
         self.possibleChampions = newPossibleChampions
 
 
-def runCopyOnepiecedle(driver):
+def runOnepiecedle(driver):
   url = "https://onepiecedle.net/classic"
   getSolution(driver, url, Champion, OnePiecedle)
 

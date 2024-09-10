@@ -13,11 +13,6 @@ from Solves.solvePokedle import runPokedle
 from Solves.solveSmashdle import runSmashdle
 from Solves.solveDotadle import runDotadle
 from Solves.solveOnepiecedle import runOnepiecedle
-from Solves.Test.copySolvePokedle import runCopyPokedle
-from Solves.Test.copySolveOnepiecedle import runCopyOnepiecedle
-from Solves.Test.copySolveDotadle import runCopyDotadle
-from Solves.Test.copySolveSmashdle import runCopySmashdle
-from Solves.Test.copySolveLoldle import runCopyLoldle
 
 import time
 
@@ -30,10 +25,10 @@ def runOneAtATime(lst):
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-    #runCopyLoldle(driver)
-    #runCopyPokedle(driver)
-    #runCopySmashdle(driver)
-    runCopyDotadle(driver)
-    #runCopyOnepiecedle(driver)
+    runLoldle(driver)
+    runPokedle(driver)
+    runSmashdle(driver)
+    runDotadle(driver)
+    runOnepiecedle(driver)
 
     driver.quit()

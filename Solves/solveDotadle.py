@@ -3,8 +3,8 @@ from .BaseClasses import BaseAnswer, Champion
 
 import re
 
-class Smashdle(BaseAnswer):
 
+class Dotadle(BaseAnswer):
 
     def gotInferiorDate(self, champion, index):
         newPossibleChampions = []
@@ -34,7 +34,6 @@ class Smashdle(BaseAnswer):
         self.possibleChampions = newPossibleChampions
 
 
-
-def runCopySmashdle(driver):
-  url = "https://smashdle.net/classic"
-  getSolution(driver, url, Champion, Smashdle)
+def runDotadle(driver):
+  url = "https://dotadle.net/classic"
+  getSolution(driver, url, Champion, Dotadle)

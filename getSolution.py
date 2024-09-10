@@ -16,7 +16,7 @@ from utils import getFileFromLink, getLastChampGiven, processGuess, sendGuess, c
 
 
 def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
-
+    print("\n")
     file = getFileFromLink(url)
     # Your URL
 
@@ -86,8 +86,8 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
 
     if colorsAllGreen(colors):
         print()
-        print("You won")
-        print("")
+        print("Winner found")
+        print("\n")
 
 
 
