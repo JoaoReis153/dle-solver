@@ -117,8 +117,10 @@ YELLOW = "\033[43m  \033[0m" # Yellow square
 GREEN = "\033[42m  \033[0m"  # Green square
 
 def print_colored_squares(sequence):
+    print("(" + sequence + ")")
     print("(", end = "")
     for char in sequence:
+        print(" ", end = "")
         if char == 'b':
             print(RED, end='')      # Print red square for 'b'
         elif char == 'p':
@@ -129,6 +131,5 @@ def print_colored_squares(sequence):
             print("↑", end='')       # Print up arrow for 's'
         elif char == 'i':
             print("↓", end='')       # Print down arrow for 'i'
-        else:
-            print("  ", end='')      # Print space for any other character
+            
     print(")")  # New line after printing all squares

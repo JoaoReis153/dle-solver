@@ -4,7 +4,7 @@ import math
 import re
 
 
-class OnePiecedle(BaseAnswer):
+class Narutodle(BaseAnswer):
 
     def gotInferiorDate(self, champion, index):
         newPossibleChampions = []
@@ -41,9 +41,9 @@ class OnePiecedle(BaseAnswer):
         self.possibleChampions = newPossibleChampions
 
 
-def runOnepiecedle(driver):
-  url = "https://onepiecedle.net/classic"
-  getSolution(driver, url, Champion, OnePiecedle)
+def runNarutodle(driver):
+  url = "https://Narutodle.net/classic"
+  getSolution(driver, url, Champion, Narutodle)
 
 
 
@@ -75,32 +75,22 @@ def convert_to_base_unit(input_str):
 
 
 arcList = [
-  'Romance Dawn',
-  'Orange Town',
-  'Syrup Village',
-  'Baratie',
-  'Arlong Park',
-  'Loguetown',
-  'Reverse Mountain',
-  'Whisky Peak',
-  'Little Garden',
-  'Drum Island',
-  'Arabasta',
-  'Jaya',
-  'Skypiea',
-  'Long Ring Long Land',
-  'Water 7',
-  'Enies Lobby',
-  'Post-War',
-  'Thriller Bark',
-  'Sabaody Archipelago',
-  'Amazon Lily',
-  'Impel Down',
-  'Return to Sabaody',
-  'Fish-Man Island',
-  'Punk Hazard',
-  'Dressrosa',
-  'Zou',
-  'Whole Cake Island',
-  'Wano Country'
+    "Prologue",
+    "Chūnin Exams",
+    "Konoha Crush",
+    "Search for Tsunade",
+    "Sasuke Recovery Mission",
+    "Kazekage Rescue Mission",
+    "Tenchi Bridge Reconnaissance Mission",
+    "Akatsuki Suppression Mission",
+    "Itachi Pursuit Mission",
+    "Fated Battle Between Brothers",
+    "Tale of Jiraiya the Gallant",
+    "Pain's Assault",
+    "Five Kage Summit",
+    "Countdown",
+    "Climax",
+    "Kakashi Gaiden",  # Flashback arc
+    "Birth of the Ten-Tails' Jinchūriki",
+    "Kaguya Ōtsutsuki Strikes"
 ]

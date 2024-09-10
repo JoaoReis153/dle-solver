@@ -58,33 +58,37 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
     input_element = wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='IZ-select__input-wrap']//input")))
     input_element.clear()
 
-
+    """
     sendGuess(driver, input_element, firstGuess.attributes[0], answer)
 
-
-
     guess, colors = processGuess(answer, driver)
+
     while(len(colors) != attrsLen - 1):
         guess, colors = processGuess(answer, driver)
+    """
+    colorsAllGreen = False
+    while not colorsAllGreen :
+        print(answer.possibleChampions)
 
-
-
-    while not colorsAllGreen(colors) :
+        guess = answer.possibleChampions[0].attributes[0]
+        
+        print("\n")
+        
+        sendGuess(driver, input_element, guess, answer)
+        
+        guess, colors = processGuess(answer, driver)
 
         answer.addTry(guess, colors)
 
         if(len(answer.possibleChampions) == 0 or colors == "ggggggg"):
             print("Answer not found")
             break
-
-        guess = answer.possibleChampions[0].attributes[0]
-        print("\n")
-        sendGuess(driver, input_element, guess, answer)
-        guess, colors = processGuess(answer, driver)
+        
+        colorsAllGreen = colorsAllGreen(colors)
 
 
 
-    if colorsAllGreen(colors):
+    if colorsAllGreen:
         print()
         print("Winner found")
         print("\n")

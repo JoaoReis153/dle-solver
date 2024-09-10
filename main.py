@@ -9,12 +9,13 @@ site2 = "https://pokedle.net/classic"
 
 site3="https://smashdle.net/classic"
 
-
 site4 = "https://dotadle.net/classic"
 
 site5 = "https://onepiecedle.net/classic"
 
-sites = [site1, site2, site3, site4, site5]
+site6 = "https://narutodle.net/classic"
 
-#loadDatabase(site5)
+sites = [site1, site2, site3, site4, site5, site6]
+
+#loadDatabase(site6)
 runOneAtATime(sites)
