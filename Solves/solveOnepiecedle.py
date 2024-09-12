@@ -42,6 +42,7 @@ class OnePiecedle(BaseAnswer):
 
 
 def runOnepiecedle(driver):
+  print("Solving OnePiecedle...")
   url = "https://onepiecedle.net/classic"
   getSolution(driver, url, Champion, OnePiecedle)
 

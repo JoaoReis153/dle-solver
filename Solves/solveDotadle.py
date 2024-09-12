@@ -35,5 +35,6 @@ class Dotadle(BaseAnswer):
 
 
 def runDotadle(driver):
+  print("Solving Dotadle...")
   url = "https://dotadle.net/classic"
   getSolution(driver, url, Champion, Dotadle)

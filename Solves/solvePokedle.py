@@ -36,5 +36,6 @@ class Pokedle(BaseAnswer):
 
 
 def runPokedle(driver):
+  print("Solving Pokedle...")
   url = "https://pokedle.net/classic"
   getSolution(driver, url, Champion, Pokedle)

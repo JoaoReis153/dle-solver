@@ -42,6 +42,7 @@ class Narutodle(BaseAnswer):
 
 
 def runNarutodle(driver):
+  print("Solving Narutodle...")
   url = "https://Narutodle.net/classic"
   getSolution(driver, url, Champion, Narutodle)
 

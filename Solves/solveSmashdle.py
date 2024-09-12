@@ -36,5 +36,6 @@ class Smashdle(BaseAnswer):
 
 
 def runSmashdle(driver):
+  print("Solving Smashdle...")
   url = "https://smashdle.net/classic"
   getSolution(driver, url, Champion, Smashdle)

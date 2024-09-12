@@ -34,6 +34,6 @@ class Loldle(BaseAnswer):
 
 
 def runLoldle(driver):
-    print("Running Loldle...")
+    print("Solving Loldle...")
     url = "https://loldle.net/classic"
     getSolution(driver, url, Champion, Loldle)

@@ -77,7 +77,7 @@ def processGuess(answer, driver):
 
         time.sleep(0.2)
         # Find all 'div' elements inside the 'square-container'
-        attributesDivs = lastElement.find_element(By.CLASS_NAME, "square-container").find_elements(By.TAG_NAME, "div")
+        attributesDivs = lastElement.find_element(By.CLASS_NAME, "square-container").find_elements(By.XPATH, "./div")
 
         info = ""
         for div in attributesDivs:
@@ -117,10 +117,8 @@ YELLOW = "\033[43m  \033[0m" # Yellow square
 GREEN = "\033[42m  \033[0m"  # Green square
 
 def print_colored_squares(sequence):
-    print("(" + sequence + ")")
     print("(", end = "")
     for char in sequence:
-        print(" ", end = "")
         if char == 'b':
             print(RED, end='')      # Print red square for 'b'
         elif char == 'p':
@@ -131,5 +129,6 @@ def print_colored_squares(sequence):
             print("↑", end='')       # Print up arrow for 's'
         elif char == 'i':
             print("↓", end='')       # Print down arrow for 'i'
-            
+        else:
+            print("  ", end='')      # Print space for any other character
     print(")")  # New line after printing all squares

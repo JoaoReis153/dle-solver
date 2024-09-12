@@ -26,13 +26,13 @@ def runOneAtATime(lst):
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-    """
+
     runLoldle(driver)
     runPokedle(driver)
     runSmashdle(driver)
     runDotadle(driver)
     runOnepiecedle(driver)
-    """
+
 
     runNarutodle(driver)
 

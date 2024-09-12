@@ -17,5 +17,5 @@ site6 = "https://narutodle.net/classic"
 
 sites = [site1, site2, site3, site4, site5, site6]
 
-#loadDatabase(site6)
-runOneAtATime(sites)
+loadDatabase(site6)
+#runOneAtATime(sites)
