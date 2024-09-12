@@ -1,3 +1,4 @@
+import os
 import math
 import time
 import random
@@ -16,13 +17,14 @@ from utils import getFileFromLink, getLastChampGiven, processGuess, sendGuess, c
 
 
 def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
+
     print("\n")
+
     file = getFileFromLink(url)
     # Your URL
 
     champions=[]
 
-    #Load file
     with open(file, "r") as f:
         content = (f.read()).split("\n")
 
@@ -62,21 +64,21 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
     while not allGreen :
 
         guess = answer.possibleChampions[0].attributes[0]
-        
+
         print("\n")
-        
+
         sendGuess(driver, input_element, guess, answer)
-        
+
         guess, colors = processGuess(answer, driver)
 
         answer.addTry(guess, colors)
 
         allGreen = colorsAllGreen(colors)
 
-        if(not allGreen and (answer.possibleChampions) == 0):
+        if (not allGreen and (answer.possibleChampions) == 0):
             print("Answer not found")
             break
-        
+
 
 
 

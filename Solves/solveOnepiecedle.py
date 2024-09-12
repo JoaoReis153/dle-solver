@@ -51,6 +51,10 @@ def runOnepiecedle(driver):
 def convert_to_base_unit(input_str):
 
     numbers = re.findall(r'[0-9.]+', input_str)
+    if not any(not char.isdigit() for char in input_str):
+        return input_str
+
+
     try:
         index = arcList.index(input_str)
         return index
