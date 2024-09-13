@@ -132,3 +132,37 @@ def print_colored_squares(sequence):
         else:
             print("  ", end='')      # Print space for any other character
     print(")")  # New line after printing all squares
+
+
+import re
+import math
+
+def convert_to_base_unit(input_str, arcList=[]):
+
+    numbers = re.findall(r'[0-9.]+', input_str)
+    if not any(not char.isdigit() for char in input_str):
+        return input_str
+
+
+    try:
+        index = arcList.index(input_str)
+        return index
+    except ValueError:
+        if "base64" in input_str:
+            return None
+        #return input_str
+
+        input_str = input_str.strip().lower()
+        content = int("".join(numbers))
+
+        if 'cm' in input_str or 'm' in input_str or 'M' in input_str:
+            return str(int(content * math.pow(10,6)))
+
+        if "B" in input_str or 'b' in input_str:
+            return str(int(content * math.pow(10,9)))
+
+        if any(not char.isdigit() for char in input_str):
+            return None
+
+        return input_str
+

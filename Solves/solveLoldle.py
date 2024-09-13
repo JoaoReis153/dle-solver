@@ -1,6 +1,6 @@
 from getSolution import getSolution
 from .BaseClasses import BaseAnswer, Champion
-
+from utils import convert_to_base_unit
 import re
 
 
@@ -12,8 +12,9 @@ class Loldle(BaseAnswer):
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1:
 
-                possibleChampionInt = "".join(re.findall(r'\d+\.\d+|\d+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'\d+\.\d+|\d+', champion.attributes[index]))
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index])
+                givenChampionInt = convert_to_base_unit(champion.attributes[index])
+
                 if(float(possibleChampionInt) < float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
 
@@ -25,8 +26,8 @@ class Loldle(BaseAnswer):
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
-                possibleChampionInt = "".join(re.findall(r'\d+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'\d+', champion.attributes[index]))
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index])
+                givenChampionInt = convert_to_base_unit(champion.attributes[index])
                 if(float(possibleChampionInt) > float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
 

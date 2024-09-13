@@ -1,6 +1,6 @@
 from getSolution import getSolution
 from .BaseClasses import BaseAnswer, Champion
-
+from utils import convert_to_base_unit
 import re
 
 
@@ -11,8 +11,8 @@ class Pokedle(BaseAnswer):
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1:
 
-                possibleChampionInt = "".join(re.findall(r'[0-9.]+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'[0-9.]+', champion.attributes[index]))
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index])
+                givenChampionInt = convert_to_base_unit(champion.attributes[index])
 
                 if(float(possibleChampionInt) < float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
@@ -25,8 +25,8 @@ class Pokedle(BaseAnswer):
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
-                possibleChampionInt = "".join(re.findall(r'[0-9.]+', possibleChampion.attributes[index]))
-                givenChampionInt = "".join(re.findall(r'[0-9.]+', champion.attributes[index]))
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index])
+                givenChampionInt = convert_to_base_unit(champion.attributes[index])
 
                 if(float(possibleChampionInt) > float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)

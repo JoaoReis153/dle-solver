@@ -2,6 +2,7 @@ from getSolution import getSolution
 from .BaseClasses import BaseAnswer, Champion
 import math
 import re
+from utils import convert_to_base_unit
 
 
 class Narutodle(BaseAnswer):
@@ -12,8 +13,8 @@ class Narutodle(BaseAnswer):
             print(possibleChampion)
             if len(possibleChampion.attributes) != 1:
 
-                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index])
-                givenChampionInt = convert_to_base_unit(champion.attributes[index])
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index], arcList)
+                givenChampionInt = convert_to_base_unit(champion.attributes[index], arcList)
 
                 if possibleChampionInt is None:
                     newPossibleChampions.append(possibleChampion)
@@ -29,8 +30,8 @@ class Narutodle(BaseAnswer):
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
-                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index])
-                givenChampionInt = convert_to_base_unit(champion.attributes[index])
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index], arcList)
+                givenChampionInt = convert_to_base_unit(champion.attributes[index], arcList)
 
                 if possibleChampionInt is None:
                     newPossibleChampions.append(possibleChampion)
@@ -46,36 +47,6 @@ def runNarutodle(driver):
   url = "https://Narutodle.net/classic"
   getSolution(driver, url, Champion, Narutodle)
 
-
-
-def convert_to_base_unit(input_str):
-
-    numbers = re.findall(r'[0-9.]+', input_str)
-    if not any(not char.isdigit() for char in input_str):
-        return input_str
-
-
-    try:
-        index = arcList.index(input_str)
-        return index
-    except ValueError:
-        if "base64" in input_str:
-            return None
-        #return input_str
-
-        input_str = input_str.strip().lower()
-        content = int("".join(numbers))
-
-        if 'cm' in input_str or 'm' in input_str or 'M' in input_str:
-            return str(int(content * math.pow(10,6)))
-
-        if "B" in input_str or 'b' in input_str:
-            return str(int(content * math.pow(10,9)))
-
-        if any(not char.isdigit() for char in input_str):
-            return None
-
-        return input_str
 
 
 
