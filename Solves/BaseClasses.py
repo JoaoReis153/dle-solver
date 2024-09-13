@@ -1,4 +1,5 @@
 import re
+from utils import convert_to_base_unit
 
 class Champion:
     def __init__(self, fromString):
@@ -20,6 +21,11 @@ class BaseAnswer:
     def __init__(self, championsList):
         self.possibleChampions = championsList
         self.possibleChampions.sort(key=lambda x: x.count, reverse=True)
+
+    def arcList(self):
+        """This property should be implemented by child classes to provide the arcList."""
+        pass
+
 
     def getAttributesLength(self):
         return len(self.possibleChampions[0].attributes)
@@ -47,6 +53,7 @@ class BaseAnswer:
                 newPossibleChampions.append(possibleChampion)
         self.possibleChampions = newPossibleChampions
 
+
     def gotYellow(self, champion, index):
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
@@ -55,6 +62,41 @@ class BaseAnswer:
                 champion_attrs = champion.attributes[index] if isinstance(champion.attributes[index], list) else champion.attributes[index].split(",")
                 if any(attr in champion_attrs for attr in possible_attrs):
                     newPossibleChampions.append(possibleChampion)
+        self.possibleChampions = newPossibleChampions
+
+
+    def gotInferiorDate(self, champion, index):
+        newPossibleChampions = []
+        for possibleChampion in self.possibleChampions:
+            print(possibleChampion)
+            if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
+
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index], self.arcList())
+                givenChampionInt = convert_to_base_unit(champion.attributes[index], self.arcList())
+
+                if possibleChampionInt is None:
+                    newPossibleChampions.append(possibleChampion)
+
+                elif(float(possibleChampionInt) < float(givenChampionInt)):
+                    newPossibleChampions.append(possibleChampion)
+
+        self.possibleChampions = newPossibleChampions
+
+
+    def gotSuperiorDate(self, champion, index):
+
+        newPossibleChampions = []
+        for possibleChampion in self.possibleChampions:
+            if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index], self.arcList())
+                givenChampionInt = convert_to_base_unit(champion.attributes[index], self.arcList())
+
+                if possibleChampionInt is None:
+                    newPossibleChampions.append(possibleChampion)
+
+                elif(float(possibleChampionInt) > float(givenChampionInt)):
+                    newPossibleChampions.append(possibleChampion)
+
         self.possibleChampions = newPossibleChampions
 
     def remove(self, name):
