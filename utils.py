@@ -17,13 +17,18 @@ def getFileFromLink(url):
     return Path(current_dir + "/Files/" + fileName)
 
 def getFileNameFromLink(url):
+    # Extract the part between '//' and the first '.'
+    fileName = getNameFromUrl(url) + ".txt"
+    return fileName
+
+def getNameFromUrl(url):
     # Parse the URL to get the netloc (network location part)
     parsed_url = urlparse(url)
     hostname = parsed_url.netloc
 
     # Extract the part between '//' and the first '.'
-    fileName = hostname.split('.')[0] + ".txt"
-    return fileName
+    name = hostname.split('.')[0] 
+    return name
 
 
 def sendGuess(driver, input_element, guess, answer):
@@ -139,30 +144,48 @@ import math
 
 def convert_to_base_unit(input_str, arcList=[]):
 
-    numbers = re.findall(r'[0-9.]+', input_str)
+    numbers = re.findall(r'\d+', input_str)  
+    total = 0
+
     if not any(not char.isdigit() for char in input_str):
         return input_str
 
-
     try:
-        index = arcList.index(input_str)
-        return index
+        if arcList is not None:
+            index = arcList.index(input_str)
+            return index
     except ValueError:
         if "base64" in input_str:
             return None
-        #return input_str
 
-        input_str = input_str.strip().lower()
+        value = input_str.strip().lower()
         content = int("".join(numbers))
+        
+        
+        if 'cm' in input_str:
+            cm_value = int(re.sub(r'\D', '', input_str))  
+            meters = cm_value/100
+            value = meters
+        
+        elif 'm' in input_str:
 
-        if 'cm' in input_str or 'm' in input_str or 'M' in input_str:
-            return str(int(content * math.pow(10,6)))
+            parts = re.findall(r'\d+', input_str)
+            meters = int(parts[0])
+            centimeters = int(parts[1]) if len(parts) > 1 else 0
+            total_meters = meters + centimeters / 100
+            print(total_meters)
+            value = total_meters
 
-        if "B" in input_str or 'b' in input_str:
-            return str(int(content * math.pow(10,9)))
+
+
+        elif 'kg' in input_str:
+            kg_value = float(re.sub(r'\D', '', input_str))  # Extract numeric part
+            value = kg_value  # You can convert to grams if needed (kg_value * 1000)
+    
+        elif "B" in input_str or 'b' in input_str:
+            value = str(int(content * math.pow(10,9)))
 
         if any(not char.isdigit() for char in input_str):
             return None
 
-        return input_str
-
+        return value

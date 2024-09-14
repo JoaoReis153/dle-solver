@@ -18,13 +18,10 @@ class Champion:
 
 
 class BaseAnswer:
-    def __init__(self, championsList):
+    def __init__(self, championsList, arcList):
+        self.arcList = arcList
         self.possibleChampions = championsList
         self.possibleChampions.sort(key=lambda x: x.count, reverse=True)
-
-    def arcList(self):
-        """This property should be implemented by child classes to provide the arcList."""
-        pass
 
 
     def getAttributesLength(self):
@@ -71,8 +68,8 @@ class BaseAnswer:
             print(possibleChampion)
             if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
 
-                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index], self.arcList())
-                givenChampionInt = convert_to_base_unit(champion.attributes[index], self.arcList())
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index], self.arcList)
+                givenChampionInt = convert_to_base_unit(champion.attributes[index], self.arcList)
 
                 if possibleChampionInt is None:
                     newPossibleChampions.append(possibleChampion)
@@ -88,8 +85,8 @@ class BaseAnswer:
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
             if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
-                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index], self.arcList())
-                givenChampionInt = convert_to_base_unit(champion.attributes[index], self.arcList())
+                possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index], self.arcList)
+                givenChampionInt = convert_to_base_unit(champion.attributes[index], self.arcList)
 
                 if possibleChampionInt is None:
                     newPossibleChampions.append(possibleChampion)

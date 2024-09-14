@@ -11,14 +11,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-
+from BaseClasses import BaseAnswer 
 from utils import getFileFromLink, getLastChampGiven, processGuess, sendGuess, colorsAllGreen
 #from objects import Champion, Answer
 
 
-def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
-
-    print("\n")
+def getSolution(driver, url, Champion, arcList, FIRSTGUESS = ""):
 
     file = getFileFromLink(url)
     # Your URL
@@ -31,7 +29,7 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
     for line in content:
         champions.append(Champion(line.replace(", ", ",")))
 
-    answer = Answer(champions)
+    answer = BaseAnswer(champions, arcList)
 
     attrsLen = answer.getAttributesLength()
 
@@ -62,7 +60,9 @@ def getSolution(driver, url, Champion, Answer, FIRSTGUESS = ""):
 
     allGreen = False
     while not allGreen :
-
+        if not answer.possibleChampions or not answer.possibleChampions[0]:
+            print("Something's not right!!")
+            exit()
         guess = answer.possibleChampions[0].attributes[0]
 
         print("\n")
