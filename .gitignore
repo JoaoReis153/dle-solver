@@ -1,3 +1,86 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+egg-info/
+*.egg
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+*.cover
+*.py,cover
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+*.pyd
+*.coverage
+
+# Pytest
+.cache
+*.log
+*.tox
+*.nox
+*.coverage
+*.hypothesis
+
+# Translations
+*.mo
+*.po
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# myenv
+myenv/
+
+# dotenv
+.env
+
+# Mypy
+.mypy_cache/
+
+# Pyre type checker
+.pyre/
+
+# Pylint
+pylint-report.txt
+pylint-global.txt
+
+# .venv directory
+.venv/
+
+# Cython debug symbols
+cython_debug/
 
 *.pyc
 tempCodeRunnerFile.py

@@ -1,4 +1,7 @@
 import time
+import os
+import string
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -6,23 +9,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from selenium.common.exceptions import TimeoutException, StaleElementReferenceException, ElementNotInteractableException
-from selenium.webdriver.common.action_chains import ActionChains
-import string
+from selenium.common.exceptions import TimeoutException, StaleElementReferenceException, ElementNotInteractableException, NoSuchElementException, NoSuchWindowException, WebDriverException
 
-import os, types
+from utils import getFileFromLink, newDriver, removePopUp
 
-from utils import getFileFromLink
 
 start_time = time.time()
-
-showProcess = False
 
 RED = '\033[31m'
 GREEN = '\033[32m'
 RESET = '\033[0m'
-
-waitTimeToLookForInputBox = 5  # seconds to wait for input box to appear
 
 def loadDatabase(site):
 
@@ -35,19 +31,11 @@ def loadDatabase(site):
     if os.path.exists(file):
         os.remove(file)
 
-    options = webdriver.ChromeOptions()
-    if(showProcess == True): options.add_argument('headless')
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-    driver.get(site)
-
-    actions = ActionChains(driver)
-    wait = WebDriverWait(driver, 5)
+    options, driver, wait = newDriver(site)
 
     removePopUp(driver, wait)
 
     namesData = fetchAllNames(driver, wait)
-
-    print("Waiting for data...")
 
     driver = spamNames(driver, namesData, site, wait)
 
@@ -56,7 +44,7 @@ def loadDatabase(site):
     driver.quit()
 
 def fetchInfo(driver, wait, file):
-    print("-> Fetching data")
+    print("-> Fetching data\n")
     time.sleep(1)
     championsInfoList = driver.find_elements(By.CSS_SELECTOR, ".classic-answer")
 
@@ -68,7 +56,12 @@ def fetchInfo(driver, wait, file):
 
         nameElement = championInfo.find_element(By.CSS_SELECTOR, ".square-container .square .champion-icon-name")
 
-        info = nameElement.get_attribute("textContent").strip() + ":"
+
+        info = nameElement.get_attribute("textContent").strip() 
+
+        print(info)
+
+        info += ":"
 
         for square in attributes_squares:
             # Extract text from each 'square' which might contain the attribute information
@@ -110,6 +103,7 @@ def fetchInfo(driver, wait, file):
 
     infos.sort()
 
+    print()
     print("Writing in the file...")
     with open(file, 'w') as f:
         f.write("\n".join(infos))
@@ -120,7 +114,9 @@ def fetchInfo(driver, wait, file):
     # Calculate the duration
     duration = end_time - start_time
 
-    print(f"The algorithm took {duration} seconds.")
+    print("Fetching data <-\n")
+
+    print(f"The algorithm took {duration} seconds.\n")
 
 
 def fetchAllNames(driver, wait, spamLettersRate = 0.1):
@@ -129,7 +125,7 @@ def fetchAllNames(driver, wait, spamLettersRate = 0.1):
 
     alphabet = list(string.ascii_lowercase)
 
-    print("-> Fetching names")
+    print("\n-> Fetching names")
     for letter in alphabet:
 
         print(RESET + letter.upper() + ":" + RESET)
@@ -161,41 +157,28 @@ def fetchAllNames(driver, wait, spamLettersRate = 0.1):
                     print(RED + champion.text + RED)
 
 
-        print("\n")
 
-
+    print(RESET)
     input_element.clear()
     print("Fetching names <-")
     return data
 
-def resetDriver(driver, wait, site):
-    driver.quit()
-
-    options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-
-
-    driver.get(site)
-    wait = WebDriverWait(driver, waitTimeToLookForInputBox)
-
-    removePopUp(driver, wait)
-
-    return options, driver, wait
-
-
 
 def spamNames(driver, data,  site, wait, answer = "", spamNamesRate = 0):
-    print("-> Spamming names")
     finished = False
     winnerName = ""
     newData = data.copy()
     while not finished:
+        if winnerName == "": print("-> Looking for the winner\n")
+        else: print("-> Spamming names \n")
         try:
-            print("Try")
+
             waitList = len(data)
             for name in newData:
                 if finished:
                     break
+
+                print(name)
 
                 input_element = wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='IZ-select__input-wrap']//input")))
                 input_element.send_keys(name)
@@ -208,13 +191,11 @@ def spamNames(driver, data,  site, wait, answer = "", spamNamesRate = 0):
 
                 time.sleep(spamNamesRate)
 
-
+            print("\nSpamming names <-")
             finished = True
-            print("Finished 1")
 
 
         except (TimeoutException, StaleElementReferenceException, ElementNotInteractableException):
-            print("Exception")
 
             if waitList == 0:
                 finished = True
@@ -223,37 +204,16 @@ def spamNames(driver, data,  site, wait, answer = "", spamNamesRate = 0):
                 winner = driver.find_elements(By.CLASS_NAME, "gg-name")
                 if winner:
                     winnerName = winner[0].text
-                    print("Winner: " + winnerName)
+                    print("\nLooking for the winner <- (" + winnerName + ")")
 
                     time.sleep(1)
 
                     newData.remove(winnerName)
                     newData.append(winnerName)
 
-                options, driver, wait = resetDriver(driver, wait, site)
+                driver.quit()
+                options, driver, wait = newDriver(driver, wait, site)
 
     return driver
 
 
-
-
-def removePopUp(driver, wait):
-    try:
-        pop_up_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "fc-button-label")))
-        pop_up_button.click()
-    except TimeoutException:
-        print("No pop-up found or error in closing pop-up.")
-
-    try:
-        pop_up_button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CLASS_NAME, "modal-button")))
-        pop_up_button.click()
-    except TimeoutException:
-        print('No one piece "are you up to date" pop-up found.')
-
-
-def extract_keywords_from_image_path(image_path):
-    # Use regex to extract the word before the first dot in the filename
-    match = re.search(r'/([^.\/]+)\.', image_path)
-    if match:
-        return match.group(1)
-    return "X"
