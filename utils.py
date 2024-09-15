@@ -1,11 +1,20 @@
 from pathlib import Path
+import re
 import time
+import os
+import random
+import sys
 from urllib.parse import urlparse
+
+from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import os
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
+from webdriver_manager.chrome import ChromeDriverManager
+from BaseClasses import Answer
 
 def getFileFromLink(url):
 
@@ -139,53 +148,47 @@ def print_colored_squares(sequence):
     print(")")  # New line after printing all squares
 
 
-import re
-import math
+def newDriver(site="https://www.google.com/", waitTime = 2, headless = False):
+    
+    options = webdriver.ChromeOptions()
+    
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    
+    if headless:
+        options.add_argument("--headless")
+    options.add_argument('--ignore-ssl-errors=yes')
+    options.add_argument('--ignore-certificate-errors')
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
-def convert_to_base_unit(input_str, arcList=[]):
+    
 
-    numbers = re.findall(r'\d+', input_str)  
-    total = 0
 
-    if not any(not char.isdigit() for char in input_str):
-        return input_str
+    driver.get(site)
+    wait = WebDriverWait(driver, waitTime)
+
+    removePopUp(driver, wait)
+
+    return options, driver, wait
+
+
+
+def removePopUp(driver, wait):
+    try:
+        pop_up_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "fc-button-label")))
+        pop_up_button.click()
+    except TimeoutException:
+        pass
 
     try:
-        if arcList is not None:
-            index = arcList.index(input_str)
-            return index
-    except ValueError:
-        if "base64" in input_str:
-            return None
-
-        value = input_str.strip().lower()
-        content = int("".join(numbers))
-        
-        
-        if 'cm' in input_str:
-            cm_value = int(re.sub(r'\D', '', input_str))  
-            meters = cm_value/100
-            value = meters
-        
-        elif 'm' in input_str:
-
-            parts = re.findall(r'\d+', input_str)
-            meters = int(parts[0])
-            centimeters = int(parts[1]) if len(parts) > 1 else 0
-            total_meters = meters + centimeters / 100
-            print(total_meters)
-            value = total_meters
+        pop_up_button = WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.CLASS_NAME, "modal-button")))
+        pop_up_button.click()
+    except TimeoutException:
+        pass
 
 
+def extract_keywords_from_image_path(image_path):
 
-        elif 'kg' in input_str:
-            kg_value = float(re.sub(r'\D', '', input_str))  # Extract numeric part
-            value = kg_value  # You can convert to grams if needed (kg_value * 1000)
-    
-        elif "B" in input_str or 'b' in input_str:
-            value = str(int(content * math.pow(10,9)))
-
-        if any(not char.isdigit() for char in input_str):
-            return None
-
-        return value
+    match = re.search(r'/([^.\/]+)\.', image_path)
+    if match:
+        return match.group(1)
+    return "X"

@@ -1,4 +1,7 @@
 import time
+import os
+import string
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -6,23 +9,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from selenium.common.exceptions import TimeoutException, StaleElementReferenceException, ElementNotInteractableException
-from selenium.webdriver.common.action_chains import ActionChains
-import string
+from selenium.common.exceptions import TimeoutException, StaleElementReferenceException, ElementNotInteractableException, NoSuchElementException, NoSuchWindowException, WebDriverException
 
-import os, types
+from utils import getFileFromLink, newDriver, removePopUp
 
-from utils import getFileFromLink
 
 start_time = time.time()
-
-showProcess = False
 
 RED = '\033[31m'
 GREEN = '\033[32m'
 RESET = '\033[0m'
-
-waitTimeToLookForInputBox = 5  # seconds to wait for input box to appear
 
 def loadDatabase(site):
 
@@ -35,19 +31,11 @@ def loadDatabase(site):
     if os.path.exists(file):
         os.remove(file)
 
-    options = webdriver.ChromeOptions()
-    if(showProcess == True): options.add_argument('headless')
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-    driver.get(site)
-
-    actions = ActionChains(driver)
-    wait = WebDriverWait(driver, 5)
+    options, driver, wait = newDriver(site)
 
     removePopUp(driver, wait)
 
     namesData = fetchAllNames(driver, wait)
-
-
 
     driver = spamNames(driver, namesData, site, wait)
 
@@ -175,21 +163,6 @@ def fetchAllNames(driver, wait, spamLettersRate = 0.1):
     print("Fetching names <-")
     return data
 
-def resetDriver(driver, wait, site):
-    driver.quit()
-
-    options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-
-
-    driver.get(site)
-    wait = WebDriverWait(driver, waitTimeToLookForInputBox)
-
-    removePopUp(driver, wait)
-
-    return options, driver, wait
-
-
 
 def spamNames(driver, data,  site, wait, answer = "", spamNamesRate = 0):
     finished = False
@@ -238,30 +211,9 @@ def spamNames(driver, data,  site, wait, answer = "", spamNamesRate = 0):
                     newData.remove(winnerName)
                     newData.append(winnerName)
 
-                options, driver, wait = resetDriver(driver, wait, site)
+                driver.quit()
+                options, driver, wait = newDriver(driver, wait, site)
 
     return driver
 
 
-
-
-def removePopUp(driver, wait):
-    try:
-        pop_up_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "fc-button-label")))
-        pop_up_button.click()
-    except TimeoutException:
-        pass
-
-    try:
-        pop_up_button = WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.CLASS_NAME, "modal-button")))
-        pop_up_button.click()
-    except TimeoutException:
-        pass
-
-
-def extract_keywords_from_image_path(image_path):
-    # Use regex to extract the word before the first dot in the filename
-    match = re.search(r'/([^.\/]+)\.', image_path)
-    if match:
-        return match.group(1)
-    return "X"

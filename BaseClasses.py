@@ -1,5 +1,4 @@
 import re
-from utils import convert_to_base_unit
 
 class Champion:
     def __init__(self, fromString):
@@ -17,7 +16,7 @@ class Champion:
         return f"{self.attributes}"
 
 
-class BaseAnswer:
+class Answer:
     def __init__(self, championsList, arcList):
         self.arcList = arcList
         self.possibleChampions = championsList
@@ -62,15 +61,13 @@ class BaseAnswer:
         self.possibleChampions = newPossibleChampions
 
 
-    def gotInferiorDate(self, champion, index):
+    def gotInferior(self, champion, index):
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
-            print(possibleChampion)
             if len(possibleChampion.attributes) != 1 and len(possibleChampion.attributes) != 0:
 
                 possibleChampionInt = convert_to_base_unit(possibleChampion.attributes[index], self.arcList)
                 givenChampionInt = convert_to_base_unit(champion.attributes[index], self.arcList)
-
                 if possibleChampionInt is None:
                     newPossibleChampions.append(possibleChampion)
 
@@ -80,7 +77,7 @@ class BaseAnswer:
         self.possibleChampions = newPossibleChampions
 
 
-    def gotSuperiorDate(self, champion, index):
+    def gotSuperior(self, champion, index):
 
         newPossibleChampions = []
         for possibleChampion in self.possibleChampions:
@@ -111,10 +108,51 @@ class BaseAnswer:
             elif char == "p":
                 self.gotYellow(champion, k)
             elif char == "i":
-                self.gotInferiorDate(champion, k)
+                self.gotInferior(champion, k)
             elif char == "s":
-                self.gotSuperiorDate(champion, k)
+                self.gotSuperior(champion, k)
 
     def __str__(self):
         return "\n".join(str(champ) for champ in self.possibleChampions) + "\n--------------------------------"
+
+
+
+def convert_to_base_unit(input_str, arcList=[]):
+
+    numbers = re.findall(r'\d+', input_str)
+    if not numbers:
+        return None
+
+    content = int("".join(numbers))
+    
+    if arcList is not None:
+        if input_str in arcList:
+            return arcList.index(input_str)
+        elif "base64" in input_str:
+            return None
+
+    if 'cm' in input_str:
+        cm_value = int(re.sub(r'\D', '', input_str))
+        value = cm_value / 100
+    
+    elif 'm' in input_str:
+        parts = re.findall(r'\d+', input_str)
+        meters = int(parts[0])
+        centimeters = int(parts[1]) if len(parts) > 1 else 0
+        value = meters + centimeters / 100
+
+    elif 'kg' in input_str:
+        kg_value = float(re.sub(r'\D', '', input_str))
+        value = kg_value
+
+    elif "B" in input_str or 'b' in input_str:
+        value = str(int(content * math.pow(10, 9)))
+
+    elif "M" in input_str:
+        value = str(int(content * math.pow(10, 6)))
+    
+    else:
+        return None
+
+    return value
 

@@ -1,28 +1,13 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.common.exceptions import NoSuchElementException
+import time
 from utils import getNameFromUrl
 from getSolution import getSolution
-import time
 from BaseClasses import Champion
-
+from getNames import newDriver
 def runOneAtATime(lst):
 
-    options = webdriver.ChromeOptions()
-    #ptions.add_argument("--headless")
-    options.add_argument('--ignore-ssl-errors=yes')
-    options.add_argument('--ignore-certificate-errors')
-    options.add_experimental_option("excludeSwitches", ["enable-logging"])
-
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-    
     arcList = []
+    options, driver, wait = newDriver()
+
     for site in lst:
         print("------------------------------------------")
         print("Solving " + getNameFromUrl(site) + "...")
@@ -59,7 +44,6 @@ def runOneAtATime(lst):
                         'Wano Country'
                     ]
 
-            getSolution(driver, site, Champion, arcList)
         elif "naruto" in name: 
             arcList = [
                         "Prologue",
@@ -82,6 +66,7 @@ def runOneAtATime(lst):
                         "Kaguya Ōtsutsuki Strikes"
                     ]
 
-        getSolution(driver, site, Champion, arcList)
+        getSolution(options, driver, wait, site, Champion, arcList)
+        print("------------------------------------------")
 
     driver.quit()
