@@ -1,11 +1,20 @@
 from pathlib import Path
+import re
 import time
+import os
+import random
+import sys
 from urllib.parse import urlparse
+
+from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import os
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
+from webdriver_manager.chrome import ChromeDriverManager
+from BaseClasses import Answer
 
 def getFileFromLink(url):
 
@@ -17,13 +26,18 @@ def getFileFromLink(url):
     return Path(current_dir + "/Files/" + fileName)
 
 def getFileNameFromLink(url):
+    # Extract the part between '//' and the first '.'
+    fileName = getNameFromUrl(url) + ".txt"
+    return fileName
+
+def getNameFromUrl(url):
     # Parse the URL to get the netloc (network location part)
     parsed_url = urlparse(url)
     hostname = parsed_url.netloc
 
     # Extract the part between '//' and the first '.'
-    fileName = hostname.split('.')[0] + ".txt"
-    return fileName
+    name = hostname.split('.')[0] 
+    return name
 
 
 def sendGuess(driver, input_element, guess, answer):
@@ -132,3 +146,49 @@ def print_colored_squares(sequence):
         else:
             print("  ", end='')      # Print space for any other character
     print(")")  # New line after printing all squares
+
+
+def newDriver(site="https://www.google.com/", waitTime = 2, headless = False):
+    
+    options = webdriver.ChromeOptions()
+    
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    
+    if headless:
+        options.add_argument("--headless")
+    options.add_argument('--ignore-ssl-errors=yes')
+    options.add_argument('--ignore-certificate-errors')
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])
+
+    
+
+
+    driver.get(site)
+    wait = WebDriverWait(driver, waitTime)
+
+    removePopUp(driver, wait)
+
+    return options, driver, wait
+
+
+
+def removePopUp(driver, wait):
+    try:
+        pop_up_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "fc-button-label")))
+        pop_up_button.click()
+    except TimeoutException:
+        pass
+
+    try:
+        pop_up_button = WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.CLASS_NAME, "modal-button")))
+        pop_up_button.click()
+    except TimeoutException:
+        pass
+
+
+def extract_keywords_from_image_path(image_path):
+
+    match = re.search(r'/([^.\/]+)\.', image_path)
+    if match:
+        return match.group(1)
+    return "X"

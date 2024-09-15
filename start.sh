@@ -17,6 +17,7 @@ clear
 
 #run
 python3 ./main.py
+#python3 ./utils.py
 
 deactivate
 
