@@ -1,4 +1,6 @@
 import re
+from utils import convert_to_base_unit
+
 
 class Champion:
     def __init__(self, fromString):
@@ -124,7 +126,7 @@ def convert_to_base_unit(input_str, arcList=[]):
         return None
 
     content = int("".join(numbers))
-    
+
     if arcList is not None:
         if input_str in arcList:
             return arcList.index(input_str)
@@ -134,7 +136,7 @@ def convert_to_base_unit(input_str, arcList=[]):
     if 'cm' in input_str:
         cm_value = int(re.sub(r'\D', '', input_str))
         value = cm_value / 100
-    
+
     elif 'm' in input_str:
         parts = re.findall(r'\d+', input_str)
         meters = int(parts[0])
@@ -150,7 +152,7 @@ def convert_to_base_unit(input_str, arcList=[]):
 
     elif "M" in input_str:
         value = str(int(content * math.pow(10, 6)))
-    
+
     else:
         return None
 

@@ -7,18 +7,17 @@ python3 -m venv myenv
 #activate VE
 source myenv/bin/activate
 
-
-#install packages
-pip install selenium
-pip install webdriver_manager
+#install packages from requirements.txt
+pip install -r requirements.txt
 
 #clear the terminal
 clear
 
-#run
+#run the program
 python3 ./main.py
 #python3 ./utils.py
 
+#deactivate and clean up
 deactivate
 
 find . -name '__pycache__' -type d -exec rm -r {} +
