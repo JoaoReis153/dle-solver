@@ -12,6 +12,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
+import os
+import sys
 
 from webdriver_manager.chrome import ChromeDriverManager
 from BaseClasses import Answer
@@ -36,7 +38,7 @@ def getNameFromUrl(url):
     hostname = parsed_url.netloc
 
     # Extract the part between '//' and the first '.'
-    name = hostname.split('.')[0] 
+    name = hostname.split('.')[0]
     return name
 
 
@@ -131,6 +133,7 @@ YELLOW = "\033[43m  \033[0m" # Yellow square
 GREEN = "\033[42m  \033[0m"  # Green square
 
 def print_colored_squares(sequence):
+    sys.stdout.reconfigure(encoding='utf-8')
     print("(", end = "")
     for char in sequence:
         if char == 'b':
@@ -149,19 +152,16 @@ def print_colored_squares(sequence):
 
 
 def newDriver(site="https://www.google.com/", waitTime = 2, headless = False):
-    
+
     options = webdriver.ChromeOptions()
-    
+
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-    
+
     if headless:
         options.add_argument("--headless")
     options.add_argument('--ignore-ssl-errors=yes')
     options.add_argument('--ignore-certificate-errors')
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
-
-    
-
 
     driver.get(site)
     wait = WebDriverWait(driver, waitTime)
@@ -184,6 +184,7 @@ def removePopUp(driver, wait):
         pop_up_button.click()
     except TimeoutException:
         pass
+
 
 
 def extract_keywords_from_image_path(image_path):

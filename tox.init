@@ -1,0 +1,8 @@
+[tox]
+envlist = py39
+
+[testenv]
+deps =
+    selenium
+    webdriver_manager
+commands = python3 utils.py
