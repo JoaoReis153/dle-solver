@@ -73,7 +73,7 @@ def getSolution(options, driver, wait, url, Champion, arcList, FIRSTGUESS = ""):
     except NoSuchWindowException:
         print("The browser window was closed unexpectedly.")
         sys.exit(0)
-    except Exception as e:
-        print(f"An error occurred: {e}")
+#    except Exception as e:
+ #       print(f"An error occurred: {e}")
 
 

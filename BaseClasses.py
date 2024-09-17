@@ -1,4 +1,5 @@
 import re
+import math
 
 class Champion:
     def __init__(self, fromString):
@@ -87,7 +88,6 @@ class Answer:
 
                 if possibleChampionInt is None:
                     newPossibleChampions.append(possibleChampion)
-
                 elif(float(possibleChampionInt) > float(givenChampionInt)):
                     newPossibleChampions.append(possibleChampion)
 
@@ -97,7 +97,7 @@ class Answer:
         self.possibleChampions = [champ for champ in self.possibleChampions if champ.attributes[0] != name]
 
     def addTry(self, champion, combination):
-        if combination == "ggggggg" or champion is None:
+        if champion is None:
             return
         for i, char in enumerate(combination):
             k = i + 1
@@ -118,18 +118,19 @@ class Answer:
 
 
 def convert_to_base_unit(input_str, arcList=[]):
-
     numbers = re.findall(r'\d+', input_str)
-    if not numbers:
-        return None
 
-    content = int("".join(numbers))
     
     if arcList is not None:
         if input_str in arcList:
             return arcList.index(input_str)
-        elif "base64" in input_str:
-            return None
+        #elif "base64" in input_str:
+        #    return "base"
+
+    if not numbers:
+        return None
+    
+    content = int("".join(numbers))
 
     if 'cm' in input_str:
         cm_value = int(re.sub(r'\D', '', input_str))

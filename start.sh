@@ -15,8 +15,11 @@ pip install webdriver_manager
 #clear the terminal
 clear
 
-#run
-python3 ./main.py
+if [ -z "$1" ]; then
+    python3 ./main.py
+else 
+    python3 ./main.py ${1}
+fi
 #python3 ./utils.py
 
 deactivate
