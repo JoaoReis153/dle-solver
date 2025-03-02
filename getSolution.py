@@ -34,7 +34,7 @@ def get_solution(options, driver, wait, url, arcList = [], FIRSTGUESS = ""):
         for line in content:
             champions.append(Champion(line.replace(", ", ",")))
 
-        db = Database(champions, arcList)
+        db = Database(champions, url)
 
         attrsLen = db.getAttributesLength()
 
