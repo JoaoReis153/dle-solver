@@ -1,10 +1,11 @@
-from getNames import load_database, newDriver
+from getNames import load_database
 from getSolution import get_solution
+from utils import newDriver
 
 
 def run():
 
-    options, driver, wait = newDriver()
+    options, driver, wait = newDriver(headless=True)
 
     #load_database("https://loldle.net/classic")
 

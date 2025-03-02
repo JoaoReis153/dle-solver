@@ -29,22 +29,32 @@ class Database:
 
     def gotGreen(self, champion, index):
         self.filterChampions(lambda champ: champ.attributes[index] == champion.attributes[index])
+        #print("Got green")
+        #print(len(self.possibleChampions))
 
     def gotRed(self, champion, index):
         champion_attrs = self._getAttributes(champion, index)
         self.filterChampions(lambda champ: not any(attr in champion_attrs for attr in self._getAttributes(champ, index)))
+        #print("Got red")
+        #print(len(self.possibleChampions))
 
     def gotYellow(self, champion, index):
         champion_attrs = self._getAttributes(champion, index)
         self.filterChampions(lambda champ: any(attr in champion_attrs for attr in self._getAttributes(champ, index)))
+        #print("Got yellow")
+        #print(len(self.possibleChampions))
 
     def gotInferior(self, champion, index):
         given_value = convert_to_base_unit(champion.attributes[index], self.url)
         self.filterChampions(lambda champ: self._compareValues(champ.attributes[index], given_value, "inferior"))
+        #print("Got inferior")
+        #print(len(self.possibleChampions))
 
     def gotSuperior(self, champion, index):
         given_value = convert_to_base_unit(champion.attributes[index], self.url)
         self.filterChampions(lambda champ: self._compareValues(champ.attributes[index], given_value, "superior"))
+        #print("Got superior")
+        #print(len(self.possibleChampions))
 
     def addTry(self, champion, combination):
         if not champion:

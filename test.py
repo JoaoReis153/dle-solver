@@ -2,61 +2,40 @@ from utils import getFileFromLink
 from BaseClasses import Champion, Database, convert_to_base_unit
 import re 
 
-def getBestGuess(db, url): 
+def getBestGuess(db, url):
     bestGuess = None
-    bestGuessCount = {}  # Track how many times each champion is the best guess
 
-    for possibleAnswer in db.possibleChampions:
-        hashmap = {}
+    hashmap = {}
+
+    for possibleAnswer in set(db.possibleChampions):
         for champion in db.possibleChampions:
             testdb = db.copy()
-            # Initialize the champion's score to 0 if it doesn't exist
-            if champion.attributes[0] not in hashmap:
+            if champion not in hashmap:
                 hashmap[champion] = 0
-            # Add the score for this champion
             score = getScore(possibleAnswer, champion, testdb, url)
+
             hashmap[champion] += score
 
-        # Find the champion name (key) with the maximum score for this possibleAnswer
-        currentBestGuess = max(hashmap, key=hashmap.get)
+        currentBestGuess = min(hashmap, key=hashmap.get)
 
-        # Update the count for the current best guess
-        if currentBestGuess in bestGuessCount:
-            bestGuessCount[currentBestGuess] += 1
-        else:
-            bestGuessCount[currentBestGuess] = 1
 
-        print(f"If the answer was {possibleAnswer.attributes[0]}, the best guess is {currentBestGuess}")
-
-    # Add champions to the hashmap only if they were the best guess more than once
-    for champion, count in bestGuessCount.items():
-        hashmap[champion] = count  # Store the count as the score
-
-    # Find the final best guess based on the hashmap
-    if hashmap:
-        bestGuess = max(hashmap, key=hashmap.get)
-        print(f"Final best guess is {bestGuess} with a score of {hashmap[bestGuess]}")
-    else:
-        print("No champion was the best guess more than once.")
-    
-    #print(hashmap)
+    jstNamesHahsmap = {champion.attributes[0]: score for champion, score in hashmap.items()}
+    jstNamesHahsmap = dict(sorted(jstNamesHahsmap.items(), key=lambda item: item[1]))
+    print(jstNamesHahsmap)
+    # Find the final best guess based on the bestGuessCount
+    bestGuess = min(hashmap, key=hashmap.get)
+    print(f"Final best guess is {bestGuess.attributes[0]} with a count of {hashmap[bestGuess]}")
 
     return bestGuess
 
 def getScore(answer, champion, db, url):
     championsListLength = len(db.possibleChampions)
-    score = 0
-    #print(len(db.possibleChampions))
-
     size = len(db.possibleChampions)
     combination = getGuessColor(answer, champion, url)[1:]
+    #print(combination)
     db.addTry(champion, combination)
     sizeAfterCut = len(db.possibleChampions)
-    #print("Cut with champion " + champion.attributes[0] + " the db by " + str((size - sizeAfterCut)*100/size) + "%")
-    #print("Rest " + str(sizeAfterCut) + " champions in the db")
-    #if(len(db.possibleChampions) == 1):
-    #    print(db.possibleChampions[0].attributes[0])
-    return (size - sizeAfterCut)/size
+    return sizeAfterCut
     
 
 def translateForComparison(guess:Champion, url):
@@ -69,19 +48,44 @@ def translateForComparison(guess:Champion, url):
     return converted_attributes
 
 def getOneColor(answerAttr, guessAttr):
+    # Case 1: Exact match (green)
     if answerAttr == guessAttr:
         return "g"
-    elif isinstance(answerAttr, list) and guessAttr in answerAttr:
+    
+    # Case 2: Partial match (yellow)
+    # If either answerAttr or guessAttr is a list, check for overlap
+    if isinstance(answerAttr, list) and guessAttr in answerAttr:
         return "p"
-    elif isinstance(answerAttr, list) and guessAttr not in answerAttr:
+    if isinstance(guessAttr, list) and answerAttr in guessAttr:
+        return "p"
+    if (isinstance(answerAttr, list) and isinstance(guessAttr, list) and set(answerAttr).intersection(guessAttr)):
+        return "p"
+    
+    # Case 3: No match (black)
+    if isinstance(answerAttr, list) and guessAttr not in answerAttr:
         return "b"
-    numbers = re.findall(r'\d+', answerAttr)
-    if not numbers:
+    if isinstance(guessAttr, list) and answerAttr not in guessAttr:
         return "b"
-    elif answerAttr > guessAttr:
-        return "s"
-    elif answerAttr < guessAttr:
-        return "i"
+    
+    # Case 4: Numeric comparison
+    # Extract numbers from answerAttr and guessAttr (if they are strings)
+    answer_num = re.findall(r'\d+', str(answerAttr))
+    guess_num = re.findall(r'\d+', str(guessAttr))
+    
+    if not answer_num or not guess_num:
+        return "b"  # No numbers to compare
+    
+    # Convert extracted numbers to integers
+    answer_num = int(answer_num[0])
+    guess_num = int(guess_num[0])
+    
+    if answer_num > guess_num:
+        return "s"  # Superior (answer is greater)
+    elif answer_num < guess_num:
+        return "i"  # Inferior (answer is smaller)
+    
+    # Default case: No match
+    return "b"
    
 
 def getGuessColor(answer: Champion, guess: Champion, url):
@@ -92,9 +96,7 @@ def getGuessColor(answer: Champion, guess: Champion, url):
         guessColor += getOneColor(answer[i], attr)
     return guessColor
 
-
 """
-
 url = "https://loldle.net/classic"
 file = getFileFromLink(url)
 
@@ -108,6 +110,10 @@ for line in content:
 
 db = Database(champions, url)
 
+c1 = db.getChampByName("Zilean")
+c2 = db.getChampByName("Vladimir")
 
-print(getBestGuess(db, url))~
+print(c1)
+print(c2)
+print(getScore(c1, c2, db, url))
 """
