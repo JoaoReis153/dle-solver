@@ -20,7 +20,7 @@ RED = '\033[31m'
 GREEN = '\033[32m'
 RESET = '\033[0m'
 
-def loadDatabase(site):
+def load_database(site):
 
     # Construct the file path
     file = getFileFromLink(site)
@@ -164,13 +164,16 @@ def fetchAllNames(driver, wait, spamLettersRate = 0.1):
     return data
 
 
-def spamNames(driver, data,  site, wait, answer = "", spamNamesRate = 0):
+def spamNames(driver, data,  site, wait, winnerName = "Lulu", spamNamesRate = 0):
     finished = False
-    winnerName = ""
     newData = data.copy()
     while not finished:
-        if winnerName == "": print("-> Looking for the winner\n")
-        else: print("-> Spamming names \n")
+        if winnerName == "":
+            print("-> Looking for the winner\n")
+        else:
+            newData.remove(winnerName)
+            newData.append(winnerName)
+            print("-> Spamming names \n")
         try:
 
             waitList = len(data)
@@ -212,8 +215,6 @@ def spamNames(driver, data,  site, wait, answer = "", spamNamesRate = 0):
                     newData.append(winnerName)
 
                 driver.quit()
-                options, driver, wait = newDriver(driver, wait, site)
+                options, driver, wait = newDriver(site)
 
     return driver
-
-
