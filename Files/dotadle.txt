@@ -45,7 +45,14 @@ Juggernaut:Male:Human, Masked One:Carry:Agility:Melee:Easy:2004
 Keeper of the Light:Male:Fundamental, Human:Hard Support, Support:Intelligence:Ranged:Medium:2004
 Kunkka:Male:Human:Midlane, Offlane:Strength:Melee:Medium:2008
 Legion Commander:Female:Human:Offlane:Strength:Melee:Easy:2011
+Leshrac:Male:Elemental:Midlane:Intelligence:Ranged:Easy:2004
+Lich:Male:Undead:Hard Support, Support:Intelligence:Ranged:Easy:2004
+Lifestealer:Male:Oglodi:Carry, Offlane:Strength:Melee:Medium:2004
+Lina:Female:Human:Midlane, Support:Intelligence:Ranged:Easy:2004
+Lion:Male:Demon:Hard Support, Support:Intelligence:Ranged:Easy:2004
 Lone Druid:Male:Druid, Human:Midlane, Offlane:Universal:Ranged:Hard:2004
+Luna:Female:Human:Carry:Agility:Ranged:Easy:2004
+Lycan:Male:Human, Wolf:Offlane:Universal:Melee:Medium:2004
 Magnus:Male:Magnoceros:Offlane:Universal:Melee:Medium:2004
 Marci:Female:Human:Hard Support, Offlane, Support:Universal:Melee:Medium:2021
 Mars:Male:God:Offlane:Strength:Melee:Easy:2019
@@ -84,6 +91,7 @@ Silencer:Male:Human:Hard Support, Midlane, Support:Intelligence:Ranged:Medium:20
 Skywrath Mage:Male:Skywrath:Hard Support, Support:Intelligence:Ranged:Easy:2011
 Slardar:Male:Meranth:Offlane:Strength:Melee:Easy:2004
 Slark:Male:Meranth:Carry:Agility:Melee:Medium:2009
+Snapfire:Female:Dragon, Keen:Hard Support, Midlane, Support:Universal:Ranged:Easy:2019
 Sniper:Male:Keen:Carry, Midlane:Agility:Ranged:Easy:2004
 Spectre:Female:Demon:Carry:Agility:Melee:Medium:2006
 Spirit Breaker:Male:Elemental:Offlane, Support:Strength:Melee:Easy:2005
@@ -93,7 +101,7 @@ Techies:Male:Keen:Hard Support, Support:Universal:Ranged:Medium:2004
 Templar Assassin:Female:Human, Magicborn:Carry, Midlane:Agility:Ranged:Medium:2007
 Terrorblade:Male:Demon:Carry:Agility:Melee:Medium:2004
 Tidehunter:Male:Meranth:Offlane:Strength:Melee:Easy:2004
-Timbersaw:Male:Keen:Midlane, Offlane:Universal:Melee:Medium:2011
+Timbersaw:Male:Keen:Midlane, Offlane:Strength:Melee:Medium:2011
 Tinker:Male:Keen:Midlane:Intelligence:Ranged:Medium:2004
 Tiny:Male:Giant:Midlane, Offlane, Support:Strength:Melee:Medium:2005
 Treant Protector:Male:Treant:Hard Support, Support:Strength:Melee:Medium:2004

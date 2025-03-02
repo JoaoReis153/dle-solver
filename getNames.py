@@ -164,7 +164,7 @@ def fetchAllNames(driver, wait, spamLettersRate = 0.1):
     return data
 
 
-def spamNames(driver, data,  site, wait, winnerName = "Lulu", spamNamesRate = 0):
+def spamNames(driver, data,  site, wait, winnerName = "", spamNamesRate = 0):
     finished = False
     newData = data.copy()
     while not finished:
