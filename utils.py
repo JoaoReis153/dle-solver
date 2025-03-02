@@ -2,6 +2,7 @@ from pathlib import Path
 import re
 import time
 import os
+import math
 import random
 import sys
 from urllib.parse import urlparse
@@ -16,7 +17,7 @@ import os
 import sys
 
 from webdriver_manager.chrome import ChromeDriverManager
-from BaseClasses import Answer
+from BaseClasses import Database
 
 def getFileFromLink(url):
 
@@ -43,6 +44,7 @@ def getNameFromUrl(url):
 
 
 def sendGuess(driver, input_element, guess, answer):
+    guess = guess.attributes[0]
     print("#Guess: " + guess)
     time.sleep(0.1)
     input_element.clear()
@@ -193,3 +195,5 @@ def extract_keywords_from_image_path(image_path):
     if match:
         return match.group(1)
     return "X"
+
+
