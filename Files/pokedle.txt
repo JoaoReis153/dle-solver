@@ -117,7 +117,7 @@ Rattata:Normal:None:Grassland:Purple:1:30cm:3.5kg
 Rhydon:Ground:Rock:Rough-terrain:Gray:2:1m90:120kg
 Rhyhorn:Ground:Rock:Rough-terrain:Gray:1:1m:115kg
 Sandshrew:Ground:None:Rough-terrain:Yellow:1:60cm:12kg
-Sandslash:Ground:None:Rough-terrain:Yellow:2:1m:29.5kg
+Sandslash:Ground:None:Rough-terrain:Brown, Yellow:2:1m:29.5kg
 Scyther:Bug:Flying:Grassland:Green:1:1m50:56kg
 Seadra:Water:None:Sea:Blue:2:1m20:25kg
 Seaking:Water:None:Waters-edge:Red, White:2:1m30:39kg
