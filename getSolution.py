@@ -24,7 +24,6 @@ def get_solution(options, driver, wait, url, arcList = [], FIRSTGUESS = ""):
     try:
 
         file = getFileFromLink(url)
-        # Your URL
         
         champions=[]
 

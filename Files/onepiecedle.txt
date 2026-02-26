@@ -7,7 +7,7 @@ Bellamy:Male:Donquixote Pirates:Paramecia:Armament,Observation:195M:2m40:North B
 Bellemere:Female:Marines:None:base64:0:1m86:East Blue:Arlong Park
 Benn. Beckman:Male:Red Hair Pirates:None:Armament:0:2m06:North Blue:Romance Dawn
 Bentham:Male:Newkama Land:Paramecia:base64:32M:2m38:East Blue:Little Garden
-Bepo:Male:Heart Pirates:None:base64:500:2m40:Zou:Sabaody Archipelago
+Bepo:Male:Heart Pirates:None:base64:500:2m40:Grand Line:Sabaody Archipelago
 Blueno:Male:CP0:Paramecia:Armament,Observation:0:2m58:North Blue:Water 7
 Boa Hancock:Female:Kuja:Paramecia:Armament,Observation,Conqueror:80M:1m91:Calm Belt:Amazon Lily
 Borsalino:Male:Marines:Logia:Armament,Observation:0:3m02:North Blue:Sabaody Archipelago
@@ -15,7 +15,7 @@ Brogy:Male:Giant Warrior Pirates:None:base64:100M:21m30:Grand Line:Little Garden
 Brook:Male:Straw Hat Pirates:Paramecia:base64:83M:2m77:West Blue:Thriller Bark
 Buggy:Male:Cross Guild:Paramecia:base64:15M:1m92:Grand Line:Orange Town
 Caesar Clown:Male:Germa Kingdom:Logia:base64:300M:3m09:Grand Line:Punk Hazard
-Camie:Female:Takoyaki 8:None:base64:0:1m97:Grand Line:Arabasta
+Camie:Female:Takoyaki 8:None:base64:0:1m97:Grand Line:Sabaody Archipelago
 Capone Bege:Male:Fire Tank Pirates:Paramecia:base64:350M:1m66:West Blue:Sabaody Archipelago
 Caribou:Male:Caribou Pirates:Logia:base64:210M:2m28:North Blue:Return to Sabaody
 Carrot:Female:Mokomo Dukedom:None:base64:0:1m61:Grand Line:Zou
@@ -73,6 +73,7 @@ Kureha:Female:Sakura Kingdom:None:base64:0:1m88:Grand Line:Drum Island
 Kuro:Male:Black Cat Pirates:None:base64:16M:2m07:East Blue:Syrup Village
 Kurozumi Kanjuro:Male:Kurozumi Family:Paramecia:Armament,Observation:0:3m47:Unknown:Dressrosa
 Kurozumi Tama:Female:Kurozumi Family:Paramecia:base64:0:1m08:Grand Line:Wano Country
+Kuzan:Male:Blackbeard Pirates:Logia:Armament,Observation:0:2m98:South Blue:Long Ring Long Land
 Kyros:Male:Riku Family:None:base64:0:2m98:Grand Line:Dressrosa
 Magellan:Male:Impel Down:Paramecia:base64:0:4m91:Grand Line:Impel Down
 Marco:Male:Whitebeard Pirates:Zoan:Armament,Observation:1.4B:2m03:Grand Line:Jaya
@@ -92,7 +93,7 @@ Nojiko:Female:None:None:base64:0:1m70:East Blue:Arlong Park
 Oars:Male:Thriller Bark Pirates:None:base64:0:67m:North Blue:Thriller Bark
 Paulie:Male:Galley-La Company:None:base64:0:1m95:Grand Line:Water 7
 Pedro:Male:Mokomo Dukedom:None:Armament,Observation:382M:2m33:Grand Line:Zou
-Pekoms:Male:Big Mom Pirates:Zoan:Armament,Observation:330M:2m32:Zou:Fish-Man Island
+Pekoms:Male:Big Mom Pirates:Zoan:Armament,Observation:330M:2m32:Grand Line:Fish-Man Island
 Pell:Male:Arabasta Kingdom:Zoan:base64:0:1m89:Grand Line:Arabasta
 Perona:Female:Dracule Mihawk:Paramecia:base64:0:1m60:West Blue:Thriller Bark
 Pica:Male:Donquixote Pirates:Paramecia:Armament,Observation:99M:4m70:North Blue:Dressrosa

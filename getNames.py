@@ -10,6 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import TimeoutException, StaleElementReferenceException, ElementNotInteractableException, NoSuchElementException, NoSuchWindowException, WebDriverException
+from datetime import datetime, timedelta
 
 from utils import getFileFromLink, newDriver, removePopUp
 
@@ -20,11 +21,31 @@ RED = '\033[31m'
 GREEN = '\033[32m'
 RESET = '\033[0m'
 
-def load_database(site):
+
+def get_file(site):
+
+    print("Loading names from: " + str(site))
 
     # Construct the file path
     file = getFileFromLink(site)
+    
+    # Get last modified time
+    last_modified = datetime.fromtimestamp(file.stat().st_mtime)
 
+    # Check if updated less than 1 day ago
+    if datetime.now() - last_modified < timedelta(days=1):
+        print("File was updated less than 1 day ago")
+        return;
+
+    return file;
+
+def write_database(site):
+
+    file = get_file(site)
+
+    if(file == None):
+        return;
+    
     print("Loading names into: " + str(file))
 
     # Ensure the existing file is removed before starting
@@ -118,7 +139,6 @@ def fetchInfo(driver, wait, file):
 
     print(f"The algorithm took {duration} seconds.\n")
 
-
 def fetchAllNames(driver, wait, spamLettersRate = 0.1):
 
     data = []
@@ -162,7 +182,6 @@ def fetchAllNames(driver, wait, spamLettersRate = 0.1):
     input_element.clear()
     print("Fetching names <-")
     return data
-
 
 def spamNames(driver, data,  site, wait, winnerName = "", spamNamesRate = 0):
     finished = False
