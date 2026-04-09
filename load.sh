@@ -17,7 +17,7 @@ pip install -r requirements.txt
 # clear the terminal
 clear
 
-echo "Select URLs by ID (space-separated):"
+echo "Select URLs to load database by ID (space-separated):"
 python3 -c "from url_registry import format_url_list; print(format_url_list())"
 echo
 
@@ -30,10 +30,10 @@ else
 fi
 
 if [ -z "$raw_ids" ]; then
-    echo "No IDs provided, running all URLs."
-    python3 ./main.py
+    echo "No IDs provided, loading all URLs."
+    python3 ./load.py
 else
     read -r -a selected_ids <<< "$raw_ids"
     echo "Selected IDs: ${selected_ids[*]}"
-    python3 ./main.py "${selected_ids[@]}"
+    python3 ./load.py "${selected_ids[@]}"
 fi
