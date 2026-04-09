@@ -84,3 +84,6 @@ cython_debug/
 
 *.pyc
 tempCodeRunnerFile.py
+
+#OS generated files
+*.DS_Store

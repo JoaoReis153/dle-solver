@@ -24,33 +24,46 @@ RESET = '\033[0m'
 
 def get_file(site):
 
-    print("Loading names from: " + str(site))
-
     # Construct the file path
     file = getFileFromLink(site)
+
+    # If the database file does not exist yet, fetch and create it.
+    if not file.exists():
+        return file
     
     # Get last modified time
     last_modified = datetime.fromtimestamp(file.stat().st_mtime)
 
+
+    with open(file, "r", encoding="utf-8") as f:
+        count = 0
+        for i, line in enumerate(f):
+            if i >= 10:
+                break
+            count += 1
+
     # Check if updated less than 1 day ago
-    if datetime.now() - last_modified < timedelta(days=1):
-        print("File was updated less than 1 day ago")
+    if datetime.now() - last_modified < timedelta(days=1) and count >= 10:
+        print("Aborting operation. File was updated less than 1 day ago.")
         return;
 
     return file;
 
 def write_database(site):
 
+    print("Preparing to fetch names from: " + str(site))
+
     file = get_file(site)
 
     if(file == None):
-        return;
+        return
     
     print("Loading names into: " + str(file))
 
     # Ensure the existing file is removed before starting
     if os.path.exists(file):
-        os.remove(file)
+        new_name = file.with_name(file.name + ".old")   # change this to whatever name you want
+        os.rename(file, new_name)
 
     options, driver, wait = newDriver(site)
 
@@ -128,6 +141,10 @@ def fetchInfo(driver, wait, file):
     print("Writing in the file...")
     with open(file, 'w') as f:
         f.write("\n".join(infos))
+
+    backup_file = file.with_name(file.name + ".old")
+    if backup_file.exists():
+        os.remove(backup_file)
 
     # End timing
     end_time = time.time()
