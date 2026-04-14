@@ -23,6 +23,8 @@ def get_solution(options, driver, wait, url, arcList = [], FIRSTGUESS = ""):
 
     try:
 
+        print("Preparing to find out the answer...")
+
         file = getFileFromLink(url)
         
         champions=[]
@@ -50,9 +52,6 @@ def get_solution(options, driver, wait, url, arcList = [], FIRSTGUESS = ""):
             guess = db.possibleChampions[0].attributes[0]
             
             guess = getBestGuess(db, url)
-
-
-            print("\n")
 
             sendGuess(driver, input_element, guess, db)
 
