@@ -22,14 +22,15 @@ def getBestGuess(db: Database, url):
 
             pattern_groups[pattern] += 1
 
-        # Entropy-based scoring: minimize expected partition size
-        # Score = sum of (partition_size^2) / total_answers
-        # This penalizes unbalanced partitions and favors guesses that split evenly
         entropy_score = sum(size ** 2 for size in pattern_groups.values()) / total_answers
 
         if entropy_score < bestScore:
             bestScore = entropy_score
             bestGuess = guess
+            
+            worst_case_size = max(pattern_groups.values())
+            if worst_case_size <= (total_answers // 2 + 1):
+                return bestGuess
 
     return bestGuess
 
