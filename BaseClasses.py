@@ -121,4 +121,4 @@ def convert_to_base_unit(input_str, url):
     elif "M" in input_str:
         return str(int(content * 10**6))
     else:
-        return None
+        return content
