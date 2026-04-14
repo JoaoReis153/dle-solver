@@ -2,12 +2,14 @@ from utils import getFileFromLink
 from BaseClasses import Champion, Database, convert_to_base_unit
 import re 
 from collections import defaultdict
+import math
 
 def getBestGuess(db: Database, url):
     bestGuess = None
     bestScore = float("inf")
 
     possibleAnswers = list(set(db.possibleChampions))
+    total_answers = len(possibleAnswers)
 
     for guess in db.possibleChampions:
 
@@ -20,11 +22,13 @@ def getBestGuess(db: Database, url):
 
             pattern_groups[pattern] += 1
 
-        # Score = size of largest partition (smaller = better)
-        worst_case_size = max(pattern_groups.values())
+        # Entropy-based scoring: minimize expected partition size
+        # Score = sum of (partition_size^2) / total_answers
+        # This penalizes unbalanced partitions and favors guesses that split evenly
+        entropy_score = sum(size ** 2 for size in pattern_groups.values()) / total_answers
 
-        if worst_case_size < bestScore:
-            bestScore = worst_case_size
+        if entropy_score < bestScore:
+            bestScore = entropy_score
             bestGuess = guess
 
     return bestGuess
