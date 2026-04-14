@@ -1,42 +1,33 @@
 from utils import getFileFromLink
 from BaseClasses import Champion, Database, convert_to_base_unit
 import re 
+from collections import defaultdict
 
-def getBestGuess(db, url):
+def getBestGuess(db: Database, url):
     bestGuess = None
+    bestScore = float("inf")
 
-    hashmap = {}
+    possibleAnswers = list(set(db.possibleChampions))
 
-    for possibleAnswer in set(db.possibleChampions):
-        for champion in db.possibleChampions:
-            testdb = db.copy()
-            if champion not in hashmap:
-                hashmap[champion] = 0
-            score = getScore(possibleAnswer, champion, testdb, url)
+    for guess in db.possibleChampions:
 
-            hashmap[champion] += score
+        # Pattern → number of answers producing that pattern
+        pattern_groups = defaultdict(int)
 
-        currentBestGuess = min(hashmap, key=hashmap.get)
+        for answer in possibleAnswers:
 
+            pattern = tuple(getGuessColor(answer, guess, url)[1:])
 
-    jstNamesHahsmap = {champion.attributes[0]: score for champion, score in hashmap.items()}
-    jstNamesHahsmap = dict(sorted(jstNamesHahsmap.items(), key=lambda item: item[1]))
-    print(jstNamesHahsmap)
-    # Find the final best guess based on the bestGuessCount
-    bestGuess = min(hashmap, key=hashmap.get)
-    print(f"Final best guess is {bestGuess.attributes[0]} with a count of {hashmap[bestGuess]}")
+            pattern_groups[pattern] += 1
+
+        # Score = size of largest partition (smaller = better)
+        worst_case_size = max(pattern_groups.values())
+
+        if worst_case_size < bestScore:
+            bestScore = worst_case_size
+            bestGuess = guess
 
     return bestGuess
-
-def getScore(answer, champion, db, url):
-    championsListLength = len(db.possibleChampions)
-    size = len(db.possibleChampions)
-    combination = getGuessColor(answer, champion, url)[1:]
-    #print(combination)
-    db.addTry(champion, combination)
-    sizeAfterCut = len(db.possibleChampions)
-    return sizeAfterCut
-    
 
 def translateForComparison(guess:Champion, url):
     converted_attributes = []
