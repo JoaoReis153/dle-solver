@@ -9,15 +9,15 @@ from urllib.parse import urlparse
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
+from selenium import webdriver
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
+from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import os
 import sys
-
-from webdriver_manager.chrome import ChromeDriverManager
-from BaseClasses import Database
 
 def getFileFromLink(url):
 
@@ -154,22 +154,33 @@ def print_colored_squares(sequence):
 
 
 def newDriver(site="https://www.google.com/", waitTime = 2, headless = False):
-
-    options = webdriver.ChromeOptions()
-
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    print("Loading the browser...")
+    options = Options()
 
     if headless:
         options.add_argument("--headless")
-    options.add_argument('--ignore-ssl-errors=yes')
-    options.add_argument('--ignore-certificate-errors')
-    options.add_experimental_option("excludeSwitches", ["enable-logging"])
+    
+    # Firefox equivalents for Chrome options
+    options.set_preference("network.http.phishy-userpass-length", 255)
+    options.set_preference("security.tls.insecure.fallback_host", True)
+    options.set_preference("logging.config", "")  # Disable logging
+    
+    service = Service("/opt/homebrew/bin/geckodriver") 
+
+    driver = webdriver.Firefox(
+        service=service,
+        options=options
+    )
+    
+    print("Loading the page...")
 
     driver.get(site)
     wait = WebDriverWait(driver, waitTime)
 
     removePopUp(driver, wait)
-
+    
+    print("Pop-up removed")
+    
     return options, driver, wait
 
 
